@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+   
+}
+
+#center-piece{
+    position: relative;
+    max-width: 400px;
+    text-align: center;
+   
+}
+
+.flags{
+    position: absolute;
+    width: 100%;
+    margin-top: 500px;
+}
+
