@@ -1,3 +1,10 @@
+img {
+    margin: 10px; 
+}
+
+.modal-body {
+    align-content: center;
+}
 body{
     background-color: black;
    
