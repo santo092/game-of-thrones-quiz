@@ -7,7 +7,9 @@ img {
 }
 body{
     background-color: black;
-   
+   font-family: 'Cinzel Decorative', cursive;
+   height: 1000px;
+
 }
 
 #center-piece{
@@ -22,4 +24,5 @@ body{
     width: 100%;
     margin-top: 500px;
 }
+
 
