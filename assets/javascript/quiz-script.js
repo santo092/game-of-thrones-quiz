@@ -1,3 +1,5 @@
+
+
 var config = {
     apiKey: "AIzaSyCjCOiAuCFRUqmnoV2lZ9pwwczlR7uVh8M",
     authDomain: "my-project-1551988749749.firebaseapp.com",
@@ -14,12 +16,11 @@ $("#button1").on("click", function () {
     // event.preventDefault();
     // window.location.href = "questions.html";
     userName = $("#userName").val().trim();
-    database.ref().push({
+    database.ref("/userName").push({
         userName: userName
     });
 
  });
-
 var currentQuestion = 0;
 var score = 0;
 var totQuestions =  questions.length;
@@ -54,7 +55,7 @@ function loadNextQuestion (){
     var answer = selectedOption.value;
 
     if(questions[currentQuestion].answer1== answer){
-        score+=1;
+        score+=1.5;
     }
     else if(questions[currentQuestion].answer2== answer){
         score+=3;
@@ -85,7 +86,6 @@ function loadNextQuestion (){
 
         if (score <= 20){
             window.location.href = "targaryen.html";
-
                      
         }
         if ((score <= 40) && (score > 20)){
