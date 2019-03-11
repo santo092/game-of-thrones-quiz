@@ -1,4 +1,8 @@
-var familyName = $
 
+function nytQueryURL() {
 
-$("<h1>").text(familyName)
+var queryURL = "";
+
+var queryParams = {"api-key": ""};
+
+}
