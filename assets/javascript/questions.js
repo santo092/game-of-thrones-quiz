@@ -7,7 +7,7 @@
 
 
 var questions = [{
-    "question" : " aaaaaaaaaa?",
+    "question" : " HIIII",
     "option1" : " liberals- martells", 
     "option2" : " libertarians-greyjoys", 
     "option3" : " Anarchist-targaryens", 

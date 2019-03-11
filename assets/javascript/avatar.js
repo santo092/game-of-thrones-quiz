@@ -8,5 +8,5 @@
 //     });
 //   };
   
-$("img").attr("src", "https://avatars.dicebear.com/v2/avataaars/example.svg")
+$(".avatar").attr("src", "https://avatars.dicebear.com/v2/avataaars/example.svg")
 
