@@ -65,9 +65,11 @@ function loadNextQuestion (){
 
         if (score <= 20){
             window.location.href = "targaryen.html";
+                     
         }
         if ((score <= 40) && (score > 20)){
             window.location.href = "greyjoys.html";
+
         }
         if ((score <= 60) && (score > 40)){
             window.location.href = "martells.html";
@@ -80,14 +82,9 @@ function loadNextQuestion (){
         }
         if ((score <= 120) && (score >100)){
             window.location.href = "lannisters.html";
-        }
-    
-        
+           
+        }   
     }
-    
-
-
-
 
     loadQuestion(currentQuestion);
 
@@ -97,5 +94,5 @@ loadQuestion(currentQuestion)
 
 
 
-var userName = $("#userName").val().trim();
+
 
