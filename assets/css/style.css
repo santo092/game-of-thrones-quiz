@@ -7,8 +7,13 @@ img {
 }
 body{
     background-color: black;
-    color: white; 
+    color: black;
+    
    
+}
+
+.container-quiz-results{
+    color: white;
 }
 
 #center-piece{
