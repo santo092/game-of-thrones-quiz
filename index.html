@@ -32,14 +32,12 @@
         <h2 class="lead">House Application</h2>
         <hr class="my-4">
         <p>Answer the following quiz questions to determine which house you belong to</p>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        <button type="button" id="start-btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
             Click here to begin!
+
+
         </button>
     </div>
-
-    <div class="container-fluid">
-        <img src="assets/images/logo.jpg" id="center-piece">
-        <img src="assets/images/flags.jpg" id="flags-piece">
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -58,32 +56,23 @@
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">name</span>
+                                    <input type="text" id="userName" name="lname" value="Doe"><br>
                                 </div>
-                                <input type="text" id="userName" class="form-control" placeholder="Username" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" id="submitbtn" class="btn btn-primary" id="button1">Save changes</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="button1">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-  
-        <div class="container-fluid">
-    <img src="assets/images/logo.jpg" id="center-piece" >
-    <img src="assets/images/flags.jpg" id="flags-piece" >
-
-    </div>
-
-
-    <script src="assets/javascript/firebase.js"></script>
-    <script src="assets/javascript/quiz-script.js"></script>
     <script src="assets/javascript/questions.js"></script>
-
+    <script src="assets/javascript/quiz-reults.js"></script>
+    <script src="assets/javascript/quiz-script.js"></script>
+    <script src="assets/javascript/theme-song.js"></script>
 </body>
 
 </html>
