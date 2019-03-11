@@ -25,4 +25,14 @@ body{
     margin-top: 500px;
 }
 
+.container-quiz-results{
+    align-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+    height: 1000px;
+    width: 100%;
+    margin-top: 50px;
+}
 
