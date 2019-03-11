@@ -97,4 +97,5 @@ loadQuestion(currentQuestion)
 
 
 
+var userName = $("#userName").val().trim();
 
