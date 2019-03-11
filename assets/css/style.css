@@ -7,9 +7,8 @@ img {
 }
 body{
     background-color: black;
-   font-family: 'Cinzel Decorative', cursive;
-   height: 1000px;
-
+    color: white; 
+   
 }
 
 #center-piece{
@@ -25,6 +24,7 @@ body{
     margin-top: 500px;
 }
 
+<<<<<<< HEAD
 .container-quiz-results{
     align-content: center;
     text-align: center;
@@ -34,5 +34,10 @@ body{
     height: 1000px;
     width: 100%;
     margin-top: 50px;
+=======
+.avatar{
+    width: 100px;
+    height: 100px;
+>>>>>>> b0a630bceafc18a56e011d32d8dad269c1cdac56
 }
 

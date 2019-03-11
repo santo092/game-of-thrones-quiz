@@ -1,3 +1,5 @@
+
+
 var currentQuestion = 0;
 var score = 0;
 var totQuestions =  questions.length;
@@ -27,28 +29,27 @@ function loadQuestion(questionIndex) {
 function loadNextQuestion (){
     var selectedOption = document.querySelector("input[type=radio]:checked");
     if(!selectedOption){
-        alert("please select your answer!");
         return;
     }
     var answer = selectedOption.value;
 
     if(questions[currentQuestion].answer1== answer){
-        score+=1;
+        score+=1.5;
     }
     else if(questions[currentQuestion].answer2== answer){
-        score+=2;
+        score+=3;
     }
     else if(questions[currentQuestion].answer3== answer){
-        score+=4;
+        score+=5;
     }
     else if(questions[currentQuestion].answer4 == answer){
-        score+=6;
+        score+=7;
     }
     else if(questions[currentQuestion].answer5 == answer){
-        score+=8;
+        score+=9;
     }
     else if(questions[currentQuestion].answer6 == answer){
-        score+=10;
+        score+=11;
     }
     console.log(score);
     
@@ -62,22 +63,22 @@ function loadNextQuestion (){
     
     if(currentQuestion == totQuestions){
 
-        if (score <= 15){
+        if (score <= 20){
             window.location.href = "targaryen.html";
         }
-        if ((score <= 30) && (score > 15)){
+        if ((score <= 40) && (score > 20)){
             window.location.href = "greyjoys.html";
         }
-        if ((score <= 60) && (score > 30)){
+        if ((score <= 60) && (score > 40)){
             window.location.href = "martells.html";
         }
-        if ((score <= 75) && (score >60)){
+        if ((score <= 80) && (score >60)){
             window.location.href = "wildlings.html";
         }
-        if ((score <90) && (score >75)){
+        if ((score <100) && (score >80)){
             window.location.href = "stark.html";
         }
-        if ((score <= 100) && (score >90)){
+        if ((score <= 120) && (score >100)){
             window.location.href = "lannisters.html";
         }
     
@@ -96,4 +97,5 @@ loadQuestion(currentQuestion)
 
 
 
+var userName = $("#userName").val().trim();
 
