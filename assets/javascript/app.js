@@ -22,5 +22,18 @@ $('input[name="radio"]').on('click', function() {
     if ($(this).val() == '1') {
         houseTargTally++;
         console.log(houseTargTally);
+    } else if ($(this).val() == '2') {
+        houseStarkTally++;
+        console.log(houseTargTally)
+    }  else if ($(this).val() == '3') {
+        houseStarkTally++;
+        console.log(houseTargTally)
+    } else if ($(this).val() == '4') {
+        houseStarkTally++;
+        console.log(houseTargTally)
+    }  else if ($(this).val() == '5') {
+        houseStarkTally++;
+        console.log(houseTargTally)
     }
 }); 
+
