@@ -27,7 +27,6 @@ function loadQuestion(questionIndex) {
 function loadNextQuestion (){
     var selectedOption = document.querySelector("input[type=radio]:checked");
     if(!selectedOption){
-        alert("please select your answer!");
         return;
     }
     var answer = selectedOption.value;
