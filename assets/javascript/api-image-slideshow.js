@@ -1,11 +1,55 @@
-var images = ["assets/images/greyjoy.png", "assets/images/logo.jpg", "assets/Images/asha-house-greyjoy.jpg"];
+
+// GREYJOY HTML PAGE SLIDESHOT API // 
+
+
+var images = ["assets/images/greyjoy.png", Greyjoy, "assets/Images/asha-house-greyjoy.jpg"];
 
 var showImage;
 
 var count = 0;
 
 
-$( document ).ready(startSlideshow)
+$(document).ready(function(){
+
+
+
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=greyjoy&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
+  
+    // Creating an AJAX call for the specific movie button being clicked
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    }).then(function (response) {
+      console.log(response);
+  
+      var results = response.data
+  
+      for (var i = 0; i < 1; i++) {
+        if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
+  
+  
+          var characterImage = $("<img>")
+  
+          var characterImage = $("<img class='result'>");
+              characterImage.attr("src", results[i].images.fixed_height.url);
+        //       characterImage.attr("data-state", "still");
+        //       characterImage.attr("data-still", results[i].images.fixed_height_still.url);
+        //       characterImage.attr("data-animate", results[i].images.fixed_height.url);
+  
+        
+      
+  
+  
+  
+        }
+      }
+  
+    });
+    
+
+startSlideshow(); 
+
+}) 
 
 $("#stop").click(stopSlideshow);
 
@@ -32,3 +76,4 @@ function stopSlideshow() {
 
 
 displayImage();
+
