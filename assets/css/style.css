@@ -1,5 +1,6 @@
 img {
     margin: 10px; 
+    height: 400px; 
 }
 
 .modal-body {
@@ -29,3 +30,18 @@ body{
     height: 100px;
 }
 
+#image-holder {
+
+    
+     margin: 0 auto;
+
+   
+    width: 400px;
+
+   
+    text-align: center;
+
+  }
+
+  
+  
