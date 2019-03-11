@@ -34,7 +34,7 @@ function loadNextQuestion (){
     var answer = selectedOption.value;
 
     if(questions[currentQuestion].answer1== answer){
-        score+=1.5;
+        score+=1;
     }
     else if(questions[currentQuestion].answer2== answer){
         score+=3;

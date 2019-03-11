@@ -21,7 +21,7 @@
       "answer5": "S",
       "answer6": "L"
   }, {
-      "question" : "When choosing to ally yourself with another nation, what qualitites do you look for? ",
+      "question" : " When choosing to ally yourself with another nation, what qualitites do you look for? ",
       "option1" : "I have no allies.  Only future subjects ", 
       "option2" : "Don't be needy.  I hate people who are overly needy.", 
       "option3" : "Just don't betray me.  Or you'll regret it.", 
@@ -50,12 +50,12 @@
       "answer6": "L"
   }, {
       "question" : "When it comes to your enemies, what method would you use to handle them?",
-      "option1" : "Drown them under the might of my superior navy", 
-      "option2" : "Overwhelm them with superior numbers", 
-      "option3" : "Beat them with superior tactics and technology", 
-      "option4" : "Diplomacy", 
-      "option5" : "Burn them all if they don't agree to join up with me", 
-      "option6" : "Pretend to be there friend, then, when they least expect it, strike like a snake from the shadows", 
+      "option1" : " Burn them all if they don't agree to join up with me", 
+      "option2" : " Drown them under the might of my superior navy", 
+      "option3" : " Pretend to be there friend, then, when they least expect it, strike like a snake from the shadows", 
+      "option4" : " Mob them with overwhelming numbers", 
+      "option5" : " Diplomacy.  And if that fails, I got wolves. ", 
+      "option6" : " Beat them with superior tactics and technology", 
       "answer1": "T",
       "answer2": "G",
       "answer3": "M",
@@ -63,7 +63,7 @@
       "answer5": "S",
       "answer6": "L"
   }, {
-      "question" : "Which historical leader do you think your style of leadership would most closely emulate?",
+      "question" : " Which historical leader do you think your style of leadership would most closely emulate?",
       "option1" : " I emulate no one as there has never been a ruler like me.", 
       "option2" : " None come to mind.  They were all too involved in the day to day lives of their citizens", 
       "option3" : " Franklin Roosevelt", 
@@ -91,7 +91,7 @@
       "answer5": "S",
       "answer6": "L"
   }, {
-      "question" : "Do you think it is the job of the government to help underpriviledged groups in their society?",
+      "question" : " Do you think it is the job of the government to help underpriviledged groups in their society?",
       "option1" : " Of course.  I am their mother and all children deserve my protection.", 
       "option2" : " No.  People must learn to sink or swim on their own.", 
       "option3" : " Yes. A nation is only as strong as its weakest members.", 
