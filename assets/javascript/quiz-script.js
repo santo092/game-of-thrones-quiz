@@ -1,3 +1,5 @@
+
+
 var currentQuestion = 0;
 var score = 0;
 var totQuestions =  questions.length;

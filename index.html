@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Start Quiz</title>
-
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -59,20 +59,20 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">name</span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                <input type="text" id="userName" class="form-control" placeholder="Username" aria-label="Username"
                                     aria-describedby="basic-addon1">
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="button1">Save changes</button>
+                    <button type="button" id="submitbtn" class="btn btn-primary" id="button1">Save changes</button>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <script src="assets/javascript/app.js"></script>
+  
         <div class="container-fluid">
     <img src="assets/images/logo.jpg" id="center-piece" >
     <img src="assets/images/flags.jpg" id="flags-piece" >
@@ -80,8 +80,8 @@
     </div>
 
 
-
-
+    <script src="assets/javascript/firebase.js"></script>
+    <script src="assets/javascript/quiz-script.js"></script>
     <script src="assets/javascript/questions.js"></script>
 
 </body>
