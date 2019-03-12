@@ -1,12 +1,19 @@
+body{
+    height:100%;
+    background-image: url("https://media.phillyvoice.com/media/images/Screen_Shot_2018-12-07_at_12.10.29.2e16d0ba.fill-735x490.png");
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    background-size: cover;
+}
 .container{
-    margin-top: 360px;
-    height: 420px;
+    /* margin-top: 360px; */
+    height: 600px;
     width: 2000px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform : translate(-50%) translateY(-50%);
-    background: rgba(255, 255, 255, 0.5);
+    
     padding: 20px;
     border: 1px solid black;
     box-shadow: 0 0  8px 3px #fff;

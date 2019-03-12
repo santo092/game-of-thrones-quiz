@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Questions</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
@@ -21,36 +21,40 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <img src="assets/images/logo.jpg" id="center-piece">
-        <img src="assets/images/flags.jpg" id="flags-piece">
 
-    </div>
 
     <div id="quizContainer" class="container">
-        <div class="title"><b>Game of Thrones Quiz</b></div>
-        <div id="question" class="question"> </div>
-        <label class="option"><input type="radio" name="option" value="T" /><span id="opt1"> </span></label>
-        <label class="option"><input type="radio" name="option" value="G" /><span id="opt2"> </span></label>
-        <label class="option"><input type="radio" name="option" value="M" /><span id="opt3"> </span></label>
-        <label class="option"><input type="radio" name="option" value="W" /><span id="opt4">  </span></label>
-        <label class="option"><input type="radio" name="option" value="S" /><span id="opt5"></span> </label>
-        <label class="option"><input type="radio" name="option" value="L" /><span id="opt6"></span> </label>
-        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title"><b>Game of Thrones Quiz</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="question" class="question"> </div>
+                <label class="option"><input type="radio" name="option" value="T" /><span id="opt1"> </span></label>
+                <label class="option"><input type="radio" name="option" value="G" /><span id="opt2"> </span></label>
+                <label class="option"><input type="radio" name="option" value="M" /><span id="opt3"> </span></label>
+                <label class="option"><input type="radio" name="option" value="W" /><span id="opt4"> </span></label>
+                <label class="option"><input type="radio" name="option" value="S" /><span id="opt5"></span> </label>
+                <label class="option"><input type="radio" name="option" value="L" /><span id="opt6"></span> </label>
+                <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+            </div>
+        </div>
     </div>
 
     <div id="result" class="container result" style="display: none;">
     </div>
 
 
-    
+
 
 
     <script src="assets/javascript/questions.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>
     <script src="assets/javascript/firebase.js"></script>
     <link rel="stylesheet" href="assets/css/quiz.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+
 
 </body>
 
