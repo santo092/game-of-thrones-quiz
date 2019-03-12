@@ -1,9 +1,12 @@
+// function goes here to funnel results from
+// quiz into the politicalParty variable
+var politicalParty = "conservative"; 
+var articleKeyWord = politicalParty;
+var queryURL = "" + articleKeyWord + "";
 
-function nytQueryURL() {
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).then(function(response){
 
-var apiKey = "SB30dhIdZKwqvxr6A9ShtcMUY15o0I4u";    
-var queryURL = "";
-
-var queryParams = {"api-key": ""};
-
-}
+});
