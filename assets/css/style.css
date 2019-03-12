@@ -1,67 +1,147 @@
 img {
-    margin: 10px; 
-    height: 400px; 
+
+    margin: 10px;
+
+    height: 400px;
+
 }
 
+ 
+
 .modal-body {
+
     align-content: center;
+
 }
+
 body{
-    background-color: black;
+
+
+    height: 100%;
+
+    /* background-color: black; */
+
     color: black;
-    
-   
+
+    background-image: url("https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/episodes/7/homepage-got-s7-ka.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg");
+
+    background-size: cover;
+
+  
+
+}
+
+.center{
+
+ 
+
+    width: 200px;
+
+ 
+
+    height: 600px;
+
+ 
+
+    margin:auto;
+
+ 
+
+    position: absolute;
+
+ 
+
+    top: 0px; bottom: 0px; right: 0px; left: 0px;
+
+ 
+
+} 
+
+#exampleModal{
+
+    background-image: url("https://wallpaperaccess.com/full/544179.jpg");
+
+    background-size: cover;
+
 }
 
 .container-quiz-results{
+<<<<<<< HEAD
     color:white;
+=======
+
+    color: white;
+
+>>>>>>> 9d2111a6e9844b652ab3eade24d5d36657b49feb
 }
+
+ 
+
 
 #center-piece{
+
     position: relative;
+
     max-width: 400px;
+
     text-align: center;
-   
+
+  
+
 }
 
+<<<<<<< HEAD
 .username{
     color: red;
 }
+=======
+ 
+>>>>>>> 9d2111a6e9844b652ab3eade24d5d36657b49feb
 
 .flags{
+
     position: absolute;
+
     width: 100%;
+
     margin-top: 500px;
+
 }
+
 
 .container-quiz-results{
+
     align-content: center;
+
     text-align: center;
+
     background-color: black;
+
     color: white;
+
     font-family: 'Cinzel Decorative', cursive;
+
     height: 1000px;
+
     width: 100%;
+
     margin-top: 50px;
+
+
 }
 
-.avatar {
+.avatar{
+
+
     width: 100px;
+
     height: 100px;
 }
 
+ 
+
 #image-holder {
-
-    
-     margin: 0 auto;
-
-   
-    width: 400px;
-
-   
+    margin: 0 auto;
+     width: 400px;
     text-align: center;
-
   }
-
-  
-  

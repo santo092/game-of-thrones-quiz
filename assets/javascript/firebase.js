@@ -12,6 +12,7 @@ var database = firebase.database();
 var userName = $("#userName").val();
 
 
+
 // var itemRef = database.ref("/userName");
 // var itemRef = database
 //     .ref("/userName")
@@ -25,6 +26,14 @@ $("#button1").on("click", function () {
     // event.preventDefault();
     // window.location.href = "questions.html";
     userName = $("#userName").val().trim();
+    
+    // var itemRef = database
+    //      .ref(“house/“);
+    //      .orderByKey(housename)
+    //      .equalTo(username);
+
+    localStorage.setItem("userName", userName);
+
     database.ref("/userName").push({
         userName: userName
     });
@@ -39,14 +48,14 @@ $("#button1").on("click", function () {
 
 
 
-database.ref("/userName").orderByChild("height").equalTo(25).on("child_added", function (childSnapshot) {
+//database.ref("/userName").orderByChild("height").equalTo(25).on("child_added", function (childSnapshot) {
 
     // console.log(childSnapshot.val());
 
-    var userName = childSnapshot.val().userName;
-    console.log(userName)
+    // var userName = childSnapshot.val().userName;
+    // console.log(userName)
 
-    $("#displayUserNameLann").append("<br>" + userName);
+    // $("#displayUserNameLann").append("<br>" + userName);
 
 
     // if (score <= 20) {
@@ -82,4 +91,4 @@ database.ref("/userName").orderByChild("height").equalTo(25).on("child_added", f
 
     // }
     // console.log(userName);
-});
+// });
