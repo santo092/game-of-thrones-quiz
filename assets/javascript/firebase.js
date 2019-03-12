@@ -9,7 +9,18 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
-var userName = $("#userName").val().trim();
+var userName = $("#userName").val();
+
+
+// var itemRef = database.ref("/userName");
+// var itemRef = database
+//     .ref("/userName")
+//     .orderByKey()
+//     .equalTo(id);
+
+// var item = snapshot.child(id).val();
+
+
 $("#button1").on("click", function () {
     // event.preventDefault();
     // window.location.href = "questions.html";
@@ -18,42 +29,57 @@ $("#button1").on("click", function () {
         userName: userName
     });
 
- });
 
-    database.ref().on("child_added", function (childSnapshot) {
-        var userName = childSnapshot.val().userName;
+    // var ref = firebase.database().ref("dinosaurs");
+    // ref.orderByChild("height").equalTo(25).on("child_added", function(snapshot) {
+    // console.log(snapshot.key);
 
- if (score <= 20){
-           
-            $("#displayUserNameLann").text(userName),
-            $(".container-quiz-results").append($("#displayUserNameLann"));
-        }
-        if ((score <= 40) && (score > 20)){
-           
-            $("#displayUserNameLann").text(userName),
-            $(".container-quiz-results").append($("#displayUserNameLann"));
+    // });
+});
 
-        }
-        if ((score <= 60) && (score > 40)){
-           
-            $("#displayUserNameLann").text(userName),
-            $(".container-quiz-results").append($("#displayUserNameLann"));
-        }
-        if ((score <= 80) && (score >60)){
-            
-            $("#displayUserNameLann").text(userName),
-            $(".container-quiz-results").append($("#displayUserNameLann"));
-        }
-        if ((score <100) && (score >80)){
-            
-            $("#displayUserNameLann").text(userName),
-            $(".container-quiz-results").append($("#displayUserNameLann"));
-        }
-        if ((score <= 120) && (score >100)){
-         
-            $("#displayUserNameLann").text(userName),
-            $(".container-quiz-results").append($("#displayUserNameLann"));
-           
-        }   
-        console.log(userName);
-    });
+
+
+database.ref("/userName").orderByChild("height").equalTo(25).on("child_added", function (childSnapshot) {
+
+    // console.log(childSnapshot.val());
+
+    var userName = childSnapshot.val().userName;
+    console.log(userName)
+
+    $("#displayUserNameLann").append("<br>" + userName);
+
+
+    // if (score <= 20) {
+
+    //     $("#displayUserNameLann").text(userName),
+    //         $(".container-quiz-results").append($("#displayUserNameLann"));
+    // }
+    // if ((score <= 40) && (score > 20)) {
+
+    //     $("#displayUserNameLann").text(userName),
+    //         $(".container-quiz-results").append($("#displayUserNameLann"));
+
+    // }
+    // if ((score <= 60) && (score > 40)) {
+
+    //     $("#displayUserNameLann").text(userName),
+    //         $(".container-quiz-results").append($("#displayUserNameLann"));
+    // }
+    // if ((score <= 80) && (score > 60)) {
+
+    //     $("#displayUserNameLann").text(userName),
+    //         $(".container-quiz-results").append($("#displayUserNameLann"));
+    // }
+    // if ((score < 100) && (score > 80)) {
+
+    //     $("#displayUserNameLann").text(userName),
+    //         $(".container-quiz-results").append($("#displayUserNameLann"));
+    // }
+    // if ((score <= 120) && (score > 100)) {
+
+    //     $("#displayUserNameLann").text(userName),
+    //         $(".container-quiz-results").append($("#displayUserNameLann"));
+
+    // }
+    // console.log(userName);
+});

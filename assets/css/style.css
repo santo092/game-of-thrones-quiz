@@ -14,7 +14,7 @@ body{
 }
 
 .container-quiz-results{
-    color: white;
+    color:white;
 }
 
 #center-piece{
@@ -22,6 +22,10 @@ body{
     max-width: 400px;
     text-align: center;
    
+}
+
+.username{
+    color: red;
 }
 
 .flags{
