@@ -17,7 +17,7 @@
 
 <body>
 
-        <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Lannister!</h1>
+        <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Wildlings!</h1>
 
     <p id="final-family-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus praesentium
         perspiciatis eius dicta
@@ -81,8 +81,19 @@
         </div>
     </div>
 
-    <script src="assets/javascript/firebase.js"></script>
-    <script src="assets/javascript/quiz-reults.js"></script>
+    <!-- <script src="assets/javascript/firebase.js"></script>
+    <script src="assets/javascript/quiz-reults.js"></script> -->
+
+    <script src="assets/javascript/config.js"></script>
+    <script>
+        database.ref("/wildlings").push({
+            username: localStorage.getItem("userName")
+        });
+
+        $("#user-name").text(localStorage.getItem("userName"));
+
+
+    </script>
 </body>
 
 </html>

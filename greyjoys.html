@@ -18,7 +18,7 @@
 <body>
     
     <div class="container-quiz-results">
-            <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Lannister!</h1>
+            <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Greyjoys!</h1>
             <div class="row">
             <div class="col-md-3">
                     <div id="image-holder"></div>
@@ -76,8 +76,19 @@
         </div>
     </div>
 
-    <script src="assets/javascript/quiz-reults.js"></script>
-    <script src="assets/javascript/api-image-slideshow.js"></script>
+    <!-- <script src="assets/javascript/quiz-reults.js"></script>
+    <script src="assets/javascript/api-image-slideshow.js"></script> -->
+
+    <script src="assets/javascript/config.js"></script>
+    <script>
+        database.ref("/greyjoys").push({
+            username: localStorage.getItem("userName")
+        });
+
+        $("#user-name").text(localStorage.getItem("userName"));
+
+
+    </script>
 
 </body>
 
