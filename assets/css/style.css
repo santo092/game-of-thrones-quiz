@@ -123,31 +123,12 @@ body{
     width: 100px;
 
     height: 100px;
-
 }
 
  
 
 #image-holder {
-
- 
-
-   
-
-     margin: 0 auto;
-
- 
-
-  
-
-    width: 400px;
-
- 
-
-  
-
+    margin: 0 auto;
+     width: 400px;
     text-align: center;
-
- 
-
   }
