@@ -24,8 +24,8 @@
 
 
     <div class="container-quiz-results">
-        <h1 id="final-family-name">Welcome to House Martell!</h1>
-        <p id="final-family-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+            <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Lannister!</h1>
+            <p id="final-family-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
             praesentium
             perspiciatis eius dicta
             repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
@@ -75,9 +75,20 @@
         </div>
     </div>>
 
+    <script src="assets/javascript/config.js"></script>
+    <script>
+        database.ref("/martells").push({
+            username: localStorage.getItem("userName")
+        });
 
+        $("#user-name").text(localStorage.getItem("userName"));
+
+
+    </script>
 
 </body>
-<script src="assets/javascript/firebase.js"></script>
-<script src="assets/javascript/quiz-reults.js"></script>
+<!-- <script src="assets/javascript/firebase.js"></script>
+<script src="assets/javascript/quiz-reults.js"></script> -->
+
+
 </html>

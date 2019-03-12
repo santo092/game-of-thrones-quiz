@@ -24,6 +24,9 @@ fetch(req)
 console.log(response);
 })
 
+var queryURL = "";
+
+
 var queryUrl = "https://newsapi.org/v2/top-headlines?country=us&category=politics&q=anarchy&pageSize=8&apiKey=a644d0814d0848ed9c6a8f4400eb2eef"
 var req = new Request(queryUrl);
 

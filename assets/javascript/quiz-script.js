@@ -1,5 +1,4 @@
 
-
 var currentQuestion = 0;
 var score = 0;
 var totQuestions =  questions.length;
@@ -34,7 +33,7 @@ function loadNextQuestion (){
     var answer = selectedOption.value;
 
     if(questions[currentQuestion].answer1== answer){
-        score+=1;
+        score+=1.5;
     }
     else if(questions[currentQuestion].answer2== answer){
         score+=3;
@@ -65,11 +64,10 @@ function loadNextQuestion (){
 
         if (score <= 20){
             window.location.href = "targaryen.html";
-                     
+
         }
         if ((score <= 40) && (score > 20)){
             window.location.href = "greyjoys.html";
-
         }
         if ((score <= 60) && (score > 40)){
             window.location.href = "martells.html";
@@ -81,7 +79,11 @@ function loadNextQuestion (){
             window.location.href = "stark.html";
         }
         if ((score <= 120) && (score >100)){
+            // database.ref("/lannisters").push({
+            //     userName: userName
+            // });
             window.location.href = "lannisters.html";
+            // userHouse.text(userName)
            
         }   
     }
