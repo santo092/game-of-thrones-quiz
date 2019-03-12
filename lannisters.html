@@ -52,9 +52,14 @@
 
         <div class="row">
 
+            
             <div class="col-md-12">
+                
+                
+                
+                <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Lannister!</h1>
 
-                <h1 id="final-family-name">Welcome to House Lannister!</h1>
+                <h1 id="userHouse"></h1>
 
             </div>
 
@@ -106,6 +111,8 @@
             <div class="col-md-3">
 
                 <p>House Lannister</p>
+
+             
 
                 <hr>
 
@@ -199,9 +206,20 @@
 
 
 
-    <script src="assets/javascript/firebase.js"></script>
-
+    <!-- <script src="assets/javascript/firebase.js"></script>
+    <script src="assets/javascript/questions.js"></script>
     <script src="assets/javascript/quiz-reults.js"></script>
+    <script src="assets/javascript/quiz-script.js"></script> -->
+    <script src="assets/javascript/config.js"></script>
+    <script>
+        database.ref("/lannister").push({
+            username: localStorage.getItem("userName")
+        });
+
+        $("#user-name").text(localStorage.getItem("userName"));
+
+
+    </script>
 
 
 
