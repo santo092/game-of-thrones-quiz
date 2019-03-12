@@ -1,0 +1,38 @@
+body{
+    height: 100%;
+    font-family: 'Bilbo', cursive;
+    background-image: url("http://www.portoalegre.travel/upload/b/68/681453_targaryen-iphone-wallpaper.jpg");
+
+   
+
+    /* font-weight: bolder; */
+
+    background-size: cover;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+    
+}
+hr{
+    display: block;
+
+    height: 1px;
+
+    border: 0;
+
+    border-top: 1px solid #ccc;
+
+    margin: 1em 0;
+
+    padding: 0;
+}
+#final-family-name1{
+    text-align: center;
+    font-size: 60px;
+
+}
+p{
+    font-size: 30px;
+}
