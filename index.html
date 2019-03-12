@@ -23,18 +23,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    
+
 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
-    <div class="jumbotron">
-        <img src="assets/Images/147ac912d7863445c0e71a13a57a1a6c.png" height="500" width="700">
-        <h2 class="lead">House Application</h2>
-        <hr class="my-4">
-        <p>Answer the following quiz questions to determine which house you belong to</p>
-        <button type="button" id="start-btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <div class="center">
+        <button type="button" id="start-btn" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
             Click here to begin!
 
 
@@ -53,25 +49,39 @@
                 </div>
                 <div class="container">
                     <div class="modal-body">
-                        <img src="assets/Images/White Walker King.png" height="200" width="350">
                         <form>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">name</span>
-                                    <input type="text" id="userName" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <input type="text" id="userName" class="form-control" placeholder="Username"
+                                        aria-label="Username" aria-describedby="addon-wrapping">
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="button1">Save changes</button>
+                            </div>
+                            <div class="gender">
+                                <input id="genderFem" type="radio" name="option" value="female" /> Female<br>
+                                <input id="genderBoy" type="radio" name="option" value="male" /> Male <br>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="button1">Save changes</button>
+                </div>
             </div>
+
+
+
+
+
         </div>
     </div>
     </div>
+
+    </div>
+    </div>
     <script src="assets/javascript/firebase.js"></script>
+
     <script src="assets/javascript/questions.js"></script>
     <script src="assets/javascript/quiz-reults.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>

@@ -7,9 +7,32 @@ img {
     align-content: center;
 }
 body{
-    background-color: black;
-    color: white; 
+    height: 100%;
+    /* background-color: black; */
+    color: black;
+    background-image: url("https://www.hbo.com/content/dam/hbodata/series/game-of-thrones/episodes/7/homepage-got-s7-ka.jpg/_jcr_content/renditions/cq5dam.web.1200.675.jpeg");
+    background-size: cover;
    
+}
+.center{
+
+    width: 200px;
+  
+    height: 600px;
+  
+    margin:auto;
+  
+    position: absolute;
+  
+    top: 0px; bottom: 0px; right: 0px; left: 0px;
+  
+}  
+#exampleModal{
+    background-image: url("https://wallpaperaccess.com/full/544179.jpg");
+    background-size: cover;
+}
+.container-quiz-results{
+    color: white;
 }
 
 #center-piece{
@@ -34,6 +57,7 @@ body{
     height: 1000px;
     width: 100%;
     margin-top: 50px;
+}
 .avatar{
     width: 100px;
     height: 100px;

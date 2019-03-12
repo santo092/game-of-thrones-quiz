@@ -7,6 +7,19 @@
 //      console.log(response);
 //     });
 //   };
-  
-$(".avatar").attr("src", "https://avatars.dicebear.com/v2/avataaars/example.svg")
+
+var genderFem = $("#genderFem");
+var genderBoy = $("#genderBoy");
+
+
+
+var avatar= $(".avatar");
+avatar.attr("src", "https://avatars.dicebear.com/v2/avataaars/example.svg")
+
+
+
+var putAvatar= $(".avatar-holder");
+$(putAvatar).html(avatar)
+
+
 

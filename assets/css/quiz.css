@@ -1,49 +1,61 @@
+body{
+    height:100%;
+    background-image: url("http://s4.scoopwhoop.com/anj/hjhgkmk/397822944.jpg");
+    font-family: 'Bilbo', cursive;
+    /* font-weight: bolder; */
+    background-size: cover;
+    letter-spacing: 2px;
+}
 .container{
-    margin-top: 360px;
-    height: 420px;
-    width: 2000px;
+    /* margin-top: 360px; */
+    /* height: 655px;
+    width: 2000px; */
     position: absolute;
     top: 50%;
     left: 50%;
     transform : translate(-50%) translateY(-50%);
-    background: rgba(255, 255, 255, 0.5);
+    
     padding: 20px;
     border: 1px solid black;
     box-shadow: 0 0  8px 3px #fff;
 }
 
-.title{
-    padding-top: 20px;
+#title{
+    /* padding-top: 5px; */
     text-align: center;
-    font-size: 36px;
-    text-transform: uppercase;
-    color: black;
+    font-size: 50px;
+    /* text-transform: uppercase; */
+    color: white;
 
 }
 
-.question{
+#question{
 padding: 5px;
-font-size: 22px;
-background: black;
+font-size: 35px;
+/* opacity: 0.5;
+filter: alpha(opacity=50); */
 border-radius: 20px;
 margin: 20px 30px 20px ;
 color: white;
 text-align: center; 
+
 }
 
 .option{
-    width: 470px;
-    display: inline-block;
+    /* width: 470px; */
+    font-size: 30px;
+    /* display: inline-block; */
     padding: 5px 0 5px 15px;
     vertical-align: middle;
-    background: black;
+    
     margin: 10px 0 10px 50px;
     color: white;
     border-radius: 20px;
 }
 
 .option:hover{
-    background: lightslategrey;
+    
+    background: white; 
     color: black;
 
 }
@@ -57,14 +69,14 @@ height: 35px;
 border-radius: 20px;
 cursor: pointer;
 float: right;
-margin-right: 60px 
+margin-right: 60px;
 }
 
 .next-btn:hover{
     background: grey;
     color: black;
 }
-
+/* 
 .result{
     height: 100px;
     text-align: center;
@@ -74,4 +86,4 @@ margin-right: 60px
 .option input:checked .option{
     background: grey;
     color: red;
-}
+} */
