@@ -150,8 +150,8 @@
       "answer6": "L"
   }]
 
-var gender = $("#gender1");
-gender.text(Female);
+// var gender = $("#gender1");
+// gender.text(Female);
 
 
 

@@ -18,40 +18,34 @@
 </head>
 
 <body>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 id="final-family-name1">Welcome to House Targaryen!</h1>
-                <hr>
-
+                <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Targaryen!</h1>
 
             </div>
         </div>
         <div class="row">
-
-            <div class="col-md-6">
-                <p>House Targaryen of Dragonstone is a Great House of Westeros and was the ruling royal House of the
-                    Seven
-                    Kingdoms for three centuries since it conquered and unified the realm</p>
-
-                <p>Titles: Lords of Dragonstone
-                    Kings of the Andals, the Rhoynar, and the First Men (claimant)
-                    Protectors of the Seven Kingdoms(claimant)
-                    Lords of the Seven Kingdoms(formerly)
-                    Protectors of the Realm (formerly)
-                    Dragonlords (formerly)</p>
-
-                <p>Seat: Dragonston Great Pyramid, Meereen (formerly) Red Keep, King's Landing (formerly)
-                    The Aegonfort (formerly)</p>>
-            </div>
-
-            <div class="col-md-6">
-                <!-- this is where the API can go -->
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- this is where the API con go  -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/Images/Targaryen.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
                 </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- this is where one of the APIs can go  -->
+                    </div>
+                    <div class="col-md-6">
+                        <!-- this is where one of the APIs can go  -->
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -95,9 +89,20 @@
     </div> -->
 
 
-    <script src="assets/javascript/firebase.js"></script>
+    <!-- <script src="assets/javascript/firebase.js"></script>
 
-    <script src="assets/javascript/quiz-reults.js"></script>
+    <script src="assets/javascript/quiz-reults.js"></script> -->
+
+    <script src="assets/javascript/config.js"></script>
+    <script>
+        database.ref("/targaryen").push({
+            username: localStorage.getItem("userName")
+        });
+
+        $("#user-name").text(localStorage.getItem("userName"));
+
+
+    </script>
 </body>
 
 </html>

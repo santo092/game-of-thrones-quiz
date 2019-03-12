@@ -25,33 +25,51 @@
     </div>
 
 
-    <div class="container-quiz-results">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 id="final-family-name">Welcome to House Martell!</h1>
+                <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Martells!</h1>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                    <div class="card" style="width: 18rem;">
-                            <img src="assets/Images/Martell.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                          </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/Images/Martell.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-8">
-                    <p id="final-family-description">House Nymeros Martell, usually simply called House Martell, is one of the Great Houses of the Seven Kingdoms and the ruling house of Dorne.</p>
+                <p id="final-family-description">House Nymeros Martell, usually simply called House Martell, is one of
+                    the Great Houses of the Seven Kingdoms and the ruling house of Dorne.</p>
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <!--this is where one of the APIs can go   -->
+                    </div>
+                    <div class="col-md-6">
+                        <!--this is where one of the APIs can go   -->
+                    </div>
+                </div>
             </div>
 
+
+
         </div>
-        
 
-       
-
+    </div>
 
 
-        <!-- <div class="row">
+
+
+    <!-- <div class="row">
             <div class="col-md-6">
                 <div class="card mb-4">
                     <div class="card-header">Your house is: Placeholder Name</div>
@@ -82,13 +100,24 @@
                     <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
                 </ul>
             </div> -->
-    </div>
-    </div>
+    <!-- </div>
+    </div> -->
+
+    <script src="assets/javascript/config.js"></script>
+    <script>
+        database.ref("/martells").push({
+            username: localStorage.getItem("userName")
+        });
+
+        $("#user-name").text(localStorage.getItem("userName"));
 
 
+    </script>
 
 </body>
-<script src="assets/javascript/firebase.js"></script>
+<script src="assets/javascript/firebase.js">
+</script>
 <script src="assets/javascript/quiz-reults.js"></script>
+
 
 </html>
