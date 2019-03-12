@@ -1,0 +1,28 @@
+body{
+    height: 100%;
+    font-family: 'Abel', sans-serif;
+    background-image: url(" https://wallpaperplay.com/walls/full/1/5/6/228235.jpg");
+
+   
+
+    /* font-weight: bolder; */
+
+    background-size: cover;
+
+    letter-spacing: 2px;
+
+    color: white;
+   
+}
+#final-family-name2{
+    text-align: center;
+    font-size: 80px;
+
+}
+.card{
+    color: black;
+
+}
+#paragraph{
+    font-size: 25px;
+}

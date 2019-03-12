@@ -1,86 +1,139 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Quiz Results</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- this is a link to bootstrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <!-- this is a link to google fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Bilbo" rel="stylesheet">
+
+    <!-- this is a link to the CSS style sheet -->
+
+    <link rel="stylesheet" href="assets/css/lanniester.css">
+
+    <!-- this is a link to jQuery -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 </head>
+
+
 
 <body>
 
 
-    <div class="container-quiz-results">
 
-        <div class= "avatar-holder">
-
-        </div>
+    <div class="container">
 
 
-        <h1 id="final-family-name">Welcome to House Lannister!</h1>
-        <h1 id="displayUserNameLann"></h1>
-        <p id="final-family-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-            praesentium
-            perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus praesentium perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus praesentium perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores.</p>
 
-        <h3>How did you place with others who took the quiz?</h3>
 
         <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-header">Your house is: Placeholder Name</div>
-                    <div class="card-body">
-                        <table class="table table-sm table-hover" id='all-results-table'>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Targaryen: Anarchy</th>
-                                    <th scope="col">Martell: Liberal</th>
-                                    <th scope="col">Stark: Moderate</th>
-                                    <th scope="col">Lannister: Conservative</th>
-                                    <th scope="col">Wildlings: Independent</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h3>Your Personalized Reading List</h3>
-                <ul class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                </ul>
-            </div>
-        </div>
-        <div class="LannisterSlideShow">
 
+            <div class="col-md-12">
+
+                <h1 id="final-family-name">Welcome to House Lannister!</h1>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <p>House Lannister</p>
+
+                <hr>
+
+                <p>Sigil: A golden lion
+
+                    Words:"Hear Me Roar!" (official)
+
+                    Casterly Rock (ancestral)
+
+                    Queen Cersei I (disputed)
+
+                    Lord Tyrion Lannister (disputed)
+
+                    Heir
+
+                    Ser Jaime Lannister
+
+                    Religion
+
+                    Faith of the Seven
+
+                    Military strength
+
+                    ~20,000 men</p>
+                <hr>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+                    <div class="LannisterSlideShow">
+
+                    </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <p>House Lannister</p>
+
+                <hr>
+
+                <p>of Casterly Rock is one of the Great Houses of Westeros, one of its richest and most powerful
+
+                    families and oldest dynasties.</p>
+                <hr>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- this is where the links to the articles can go  -->
+            </div>
         </div>
     </div>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script src="assets/javascript/firebase.js"></script>
+
     <script src="assets/javascript/quiz-reults.js"></script>
-    
+
+
+
 </body>
+
+
 
 </html>
