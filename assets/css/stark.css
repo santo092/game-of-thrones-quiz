@@ -1,0 +1,10 @@
+body{
+    height: 100%;
+    background-image: url("http://despreraonic.info/wp-content/uploads/2018/12/stark-wallcovering-stark-wallpaper-house-stark-fan-boy-wall-by-game-of-thrones-stark-wallpaper-stark-fabric-wall-covering.jpg");
+   
+    /* font-weight: bolder; */
+    background-size: cover;
+
+    letter-spacing: 2px;
+    color: white;
+}
