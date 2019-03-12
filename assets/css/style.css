@@ -16,6 +16,7 @@ img {
 
 body{
 
+
     height: 100%;
 
     /* background-color: black; */
@@ -72,6 +73,7 @@ body{
 
  
 
+
 #center-piece{
 
     position: relative;
@@ -96,7 +98,6 @@ body{
 
 }
 
- 
 
 .container-quiz-results{
 
@@ -116,9 +117,11 @@ body{
 
     margin-top: 50px;
 
+
 }
 
 .avatar{
+
 
     width: 100px;
 
