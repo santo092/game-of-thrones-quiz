@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz Results</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/martell.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -23,25 +25,51 @@
     </div>
 
 
-    <div class="container-quiz-results">
-            <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Martells!</h1>
-            <p id="final-family-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-            praesentium
-            perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus praesentium perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus praesentium perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores.</p>
-
-        <h3>How did you place with others who took the quiz?</h3>
-
-
-
+    <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Martells!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/Images/Martell.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <p id="final-family-description">House Nymeros Martell, usually simply called House Martell, is one of
+                    the Great Houses of the Seven Kingdoms and the ruling house of Dorne.</p>
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <!--this is where one of the APIs can go   -->
+                    </div>
+                    <div class="col-md-6">
+                        <!--this is where one of the APIs can go   -->
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- <div class="row">
             <div class="col-md-6">
                 <div class="card mb-4">
                     <div class="card-header">Your house is: Placeholder Name</div>
@@ -71,12 +99,9 @@
                     <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
                     <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
                 </ul>
-            </div>
-        </div>
-        <div class="MartellSlideShow">
-
-        </div>
-    </div>
+            </div> -->
+    <!-- </div>
+    </div> -->
 
     <script src="assets/javascript/config.js"></script>
     <script>
@@ -90,8 +115,9 @@
     </script>
 
 </body>
-<!-- <script src="assets/javascript/firebase.js"></script>
-<script src="assets/javascript/quiz-reults.js"></script> -->
+<script src="assets/javascript/firebase.js">
+</script>
+<script src="assets/javascript/quiz-reults.js"></script>
 
 
 </html>
