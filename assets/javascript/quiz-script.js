@@ -65,11 +65,10 @@ function loadNextQuestion (){
 
         if (score <= 20){
             window.location.href = "targaryen.html";
-                     
+
         }
         if ((score <= 40) && (score > 20)){
             window.location.href = "greyjoys.html";
-
         }
         if ((score <= 60) && (score > 40)){
             window.location.href = "martells.html";
@@ -81,7 +80,11 @@ function loadNextQuestion (){
             window.location.href = "stark.html";
         }
         if ((score <= 120) && (score >100)){
+            // database.ref("/lannisters").push({
+            //     userName: userName
+            // });
             window.location.href = "lannisters.html";
+            // userHouse.text(userName)
            
         }   
     }
