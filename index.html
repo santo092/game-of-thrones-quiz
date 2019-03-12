@@ -1,81 +1,172 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
+ 
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Start Quiz</title>
 
+ 
+
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css">
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+
         crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+
         crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+
         crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+
         crossorigin="anonymous"></script>
-    
+
+ 
 
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 </head>
 
+ 
+
 <body>
-    <div class="jumbotron">
-        <img src="assets/Images/147ac912d7863445c0e71a13a57a1a6c.png" height="500" width="700">
-        <h2 class="lead">House Application</h2>
-        <hr class="my-4">
-        <p>Answer the following quiz questions to determine which house you belong to</p>
-        <button type="button" id="start-btn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+
+    <div class="center">
+
+        <button type="button" id="start-btn" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+
             Click here to begin!
 
+ 
 
         </button>
+
     </div>
+
     <!-- Modal -->
+
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
         aria-hidden="true">
+
         <div class="modal-dialog" role="document">
+
             <div class="modal-content">
+
                 <div class="modal-header">
+
                     <h5 class="modal-title" id="exampleModalLabel">Enter your name!</h5>
+
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
                         <span aria-hidden="true">&times;</span>
+
                     </button>
+
                 </div>
+
                 <div class="container">
+
                     <div class="modal-body">
-                        <img src="assets/Images/White Walker King.png" height="200" width="350">
+
                         <form>
+
                             <div class="input-group mb-3">
+
                                 <div class="input-group-prepend">
+
                                     <span class="input-group-text" id="basic-addon1">name</span>
-                                    <input type="text" id="userName" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+
+                                    <input type="text" id="userName" class="form-control" placeholder="Username"
+
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+
                                 </div>
-                            </form>
-                        </div>
+
+                            </div>
+
+                            <div class="gender">
+
+                                <input id="genderFem" type="radio" name="option" value="female" /> Female<br>
+
+                                <input id="genderBoy" type="radio" name="option" value="male" /> Male <br>
+
+                            </div>
+
+ 
+
+                        </form>
+
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="button1">Save changes</button>
-                    </div>
+
                 </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary" id="button1">Save changes</button>
+
+                </div>
+
             </div>
+
+
+
+
+
+
         </div>
+
     </div>
+
     </div>
+
+ 
+
+    </div>
+
+    </div>
+
     <script src="assets/javascript/firebase.js"></script>
+
+ 
+
     <script src="assets/javascript/questions.js"></script>
+
     <script src="assets/javascript/quiz-reults.js"></script>
+
     <script src="assets/javascript/quiz-script.js"></script>
+
     <script src="assets/javascript/theme-song.js"></script>
+
 </body>
+
+ 
 
 </html>
