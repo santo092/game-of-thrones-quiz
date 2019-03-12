@@ -1,0 +1,46 @@
+body{
+
+    height: 100%;
+
+    background-image: url("https://i.pinimg.com/originals/a5/84/84/a5848450f4a286d88c07df41876aaca0.jpg");
+
+    font-family: 'Bilbo', cursive;
+
+    /* font-weight: bolder; */
+
+    background-size: cover;
+
+    letter-spacing: 2px;
+
+    color: white;
+
+ 
+
+}
+
+#final-family-name{
+
+    text-align: center;
+
+    font-size: 70px;
+
+    color: white;
+
+}
+
+p{
+
+  
+
+    font-size: 30px;
+
+    color: white;
+
+ 
+
+}
+
+
+p{
+    color: black;
+}
