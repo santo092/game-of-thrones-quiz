@@ -58,6 +58,7 @@ function loadNextQuestion (){
 
     if(currentQuestion == totQuestions-1){
     nextButton.text("Finish");
+    
     }
     
     if(currentQuestion == totQuestions){

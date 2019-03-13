@@ -42,5 +42,14 @@ p{
 
 
 p{
-    color: black;
+    color: white;
+}
+
+.LannisterImg {
+    border-style: solid;
+    border-width: 5px;
+    color: white; 
+    max-width: 100%;
+    max-height: 100%; 
+    
 }
