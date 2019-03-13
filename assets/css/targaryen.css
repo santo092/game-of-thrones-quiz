@@ -17,19 +17,7 @@ body{
     font-size: 60px;
     color: white;
 }
-p{
-<<<<<<< HEAD
+.card-header{
     font-size: 30px;
-}
-
-.TargaryenImg {
-    border-style: solid;
-    border-width: 5px;
-    color: white; 
-    max-width: 100%;
-    max-height: 100%; 
-    
-=======
-
->>>>>>> a3cd36052af58194bdc51f41c3032489e9519c89
+    font-weight: bold;
 }

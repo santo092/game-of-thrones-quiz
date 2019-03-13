@@ -28,3 +28,7 @@ Body{
     max-height: 100%; 
     
 }
+.card-header{
+    font-size: 30px;
+    font-weight: bold;
+}
