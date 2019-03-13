@@ -13,9 +13,11 @@ body{
     
 }
 #final-family-name{
+    background: white;
     text-align: center;
     font-size: 60px;
-    color: white;
+    color: black;
+    border-radius: 5px;
 }
 .card-header{
     font-size: 30px;
