@@ -8,7 +8,7 @@
   
   
   var questions = [{
-      "question" : " Should the government of a nation play a role in how the economy regulated?  If so, how big of one??",
+      "question" : " Should the government of a nation play a role in how the economy is regulated?  If so, how big of one??",
       "option1" : " I shall be the final authority on any policies governing economics", 
       "option2" : " The govermnet should play no role in regulating its country's economy.  ", 
       "option3" : " The government should play a huge role in how the economy is regulated.", 
