@@ -3,8 +3,35 @@ body{
     background-image: url("http://i.imgur.com/9JAg7aN.jpg");
     background-size: cover;
 }
+
+h1 {
+    margin-bottom: 40px; 
+}  
+
 #final-family-name{
     text-align: center;
     color: white;
     font-size: 80px;
+}
+.WildlingImg {
+    border-style: solid;
+    border-width: 5px;
+    color: white; 
+    max-width: 100%;
+    max-height: 100%; 
+    margin-bottom: 40px;
+    margin-top: 20px;
+    
+}
+.card-header{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #364a56;
+    color: white; 
+}
+
+.articles {
+    background-color: white; 
+    max-width: 100%;
+    max-height: 100%;
 }

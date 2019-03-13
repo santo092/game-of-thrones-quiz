@@ -18,8 +18,8 @@
 
     <!-- link to bootstrap -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- link to google fonts -->
 
@@ -27,14 +27,15 @@
 
     <!-- link to jQuery -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 
 
 
     <link rel="stylesheet" href="assets/css/quiz.css">
 
-    
+
 
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
 
@@ -76,38 +77,30 @@
 
             <div class="col-md-6">
 
-
-
-                <label class="option"><input type="radio" name="option" value="T" /><span id="opt1"> </span></label>
-
-                <label class="option"><input type="radio" name="option" value="G" /><span id="opt2"> </span></label>
-
-                <label class="option"><input type="radio" name="option" value="M" /><span id="opt3"> </span></label>
-
-
-
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="T" /><span id="opt1"> </span></label>
+                </div>
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="G" /><span id="opt2"> </span></label>
+                </div>
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="M" /><span id="opt3"> </span></label>
+                </div>
             </div>
 
 
 
             <div class="col-md-6">
-
-                <label class="option"><input type="radio" name="option" value="W" /><span id="opt4">
-
-                    </span></label>
-
-                <label class="option"><input type="radio" name="option" value="S" /><span id="opt5"></span>
-
-                </label>
-
-                <label class="option"><input type="radio" name="option" value="L" /><span id="opt6"></span>
-
-                </label>
-
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="S" /><span id="opt5"></span></label>
+                </div>
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="W" /><span id="opt4"></span></label>
+                </div>
+                <div class="row">
+                    <label class="option"><input type="radio" name="option" value="L" /><span id="opt6"></span></label>
+                </div>
             </div>
-
-
-
         </div>
 
         <div class="row">
@@ -122,44 +115,7 @@
 
         <br>
 
-        <div id="result" class="container result" style="display: none;">
-
-        </div>
-
-
-
-
-<!-- 
-        <script src="assets/javascript/firebase.js"></script>
-        <script src="assets/javascript/questions.js"></script>
-        <script src="assets/javascript/quiz-script.js"></script> -->
-
-
-        <!-- <link rel="stylesheet" href="assets/css/quiz.css">
-
-            <div class="col-md-6">
-                <label class="option"><input type="radio" name="option" value="W" /><span id="opt4">
-                    </span></label>
-                <label class="option"><input type="radio" name="option" value="S" /><span id="opt5"></span>
-                </label>
-                <label class="option"><input type="radio" name="option" value="L" /><span id="opt6"></span>
-                </label>
-            </div>
-
-
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
-            </div>
-        </div>
-        <br>
-        <div id="result" class="container result" style="display: none;">
-        </div>
- -->
-
-
-
+        <div id="result" class="container result" style="display: none;"></div>
 
         <script src="assets/javascript/questions.js"></script>
         <script src="assets/javascript/quiz-script.js"></script>

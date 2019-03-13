@@ -1,4 +1,21 @@
 
+body{
+    height: 100%;
+    font-family: 'Abel', sans-serif;
+    background-image: url("/assets/Images/freefolkBanner.jpg");
+
+   
+
+    /* font-weight: bolder; */
+
+    background-size: cover;
+
+    letter-spacing: 2px;
+
+    color: white;
+   
+}
+
 #final-family-name{
     text-align: center;
 }
@@ -11,3 +28,4 @@
     max-height: 100%; 
     
 }
+

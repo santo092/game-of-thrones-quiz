@@ -29,17 +29,17 @@
                 <div class="card" style="width: 18rem;">
                     <img src="assets/Images/Martell.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                            Sigil:A red sun pierced by a gold spear, 
-                            <hr>
-                            Words:"Unbowed, Unbent, Unbroken"
-                            <hr>
-                            Titles:
-                            Princes of Dorne
-                            Lords of Sunspear
-                            <hr>
-                            Seat:
-                            Sunspear
-                       
+                        Sigil:A red sun pierced by a gold spear,
+                        <hr>
+                        Words:"Unbowed, Unbent, Unbroken"
+                        <hr>
+                        Titles:
+                        Princes of Dorne
+                        Lords of Sunspear
+                        <hr>
+                        Seat:
+                        Sunspear
+
                     </div>
                 </div>
             </div>
@@ -54,11 +54,61 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 MartellSlideShow">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8 MartellSlideShow">
                         <!--this is where one of the APIs can go   -->
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
                         <!--this is where one of the APIs can go   -->
+                        <table class="articles">
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr">
+                                <th>Header 1</th>
+                                <th>Header 2</th>
+                            </tr>
+                        </table>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="width:320px; height:60px; overflow:auto;">
+                                    <table>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-2">
                     </div>
                 </div>
             </div>
@@ -70,6 +120,7 @@
     </div>
     <script src="assets/javascript/config.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
+    <script src="assets/javascript/quiz-script.js"></script>
     <script>
         database.ref("/martells").push({
             username: localStorage.getItem("userName")
@@ -81,9 +132,8 @@
     </script>
 
 </body>
-<script src="assets/javascript/firebase.js">
-</script>
-<script src="assets/javascript/quiz-reults.js"></script>
+<!-- <script src="assets/javascript/firebase.js"></script>
+<script src="assets/javascript/quiz-results.js"></script> -->
 
 
 </html>
