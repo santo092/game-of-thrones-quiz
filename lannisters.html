@@ -16,8 +16,8 @@
 
     <!-- this is a link to bootstrap -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- this is a link to google fonts -->
 
@@ -108,19 +108,74 @@
                 </div>
 
                 <div class="row">
+
                     <div class="col-md-6 LannisterSlideShow">
+
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8 LannisterSlideShow">
+
 
                         <!-- this is where one of the APIs can go -->
                     </div>
-                    <div class="col-md-6">
-                        <!-- this is where one of the APIs can go -->
+                    <div class="col-md-2">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <!-- this is where one of the APIs can go -->
+                        <table class="articles">
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr">
+                                <th>Header 1</th>
+                                <th>Header 2</th>
+                            </tr>
+                        </table>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="width:320px; height:60px; overflow:auto;">
+                                    <table>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                        <tr>
+                                            <td>new item</td>
+                                            <td>new item</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+
 
             </div>
 
 
-        </div>
+
 
 
 
@@ -139,9 +194,19 @@
     <script>
         database.ref("/lannister").push({
             username: localStorage.getItem("userName")
+
+        });
+
+        var ref = firebase.database().ref("/lannister");
+        ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
+       
+            var userB = snapshot.val().username;
+            console.log(userB);
+           
         });
 
         $("#user-name").text(localStorage.getItem("userName"));
+
 
 
     </script>

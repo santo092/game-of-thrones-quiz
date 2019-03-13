@@ -13,6 +13,11 @@ Body{
 
   
 }
+
+h1 {
+    margin-bottom: 40px; 
+}  
+
 #final-family-name{
     font-size: 80px;
     text-align: center;
@@ -26,9 +31,19 @@ Body{
     color: white; 
     max-width: 100%;
     max-height: 100%; 
+    margin-bottom: 40px;
+    margin-top: 20px;
     
 }
 .card-header{
     font-size: 30px;
     font-weight: bold;
+    background-color: #c45113;
+    color: #9b1b1b;
+}
+
+.articles {
+    background-color: white; 
+    max-width: 100%;
+    max-height: 100%;
 }

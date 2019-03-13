@@ -8,10 +8,13 @@ body{
     background-size: cover;
 
     letter-spacing: 2px;
-
-    
-    
 }
+
+h1 {
+    margin-bottom: 40px; 
+}  
+    
+
 #final-family-name{
     background: white;
     text-align: center;
@@ -22,4 +25,24 @@ body{
 .card-header{
     font-size: 30px;
     font-weight: bold;
+    background-color: black;
+    color: red; 
+}
+
+
+.TargaryenImg {
+    border-style: solid;
+    border-width: 5px;
+    color: white; 
+    max-width: 100%;
+    max-height: 100%; 
+    margin-bottom: 40px; 
+    margin-top: 20px
+    
+}
+
+.articles {
+    background-color: white; 
+    max-width: 100%;
+    max-height: 100%;
 }
