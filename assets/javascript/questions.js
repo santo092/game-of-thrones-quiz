@@ -176,8 +176,7 @@ var questions = [{
     "answer6": "L"
 }]
 
-// var gender = $("#gender1");
-// gender.text(Female);
+
 
 
 

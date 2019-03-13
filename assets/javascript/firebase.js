@@ -12,9 +12,6 @@ var database = firebase.database();
 var userName = $("#userName").val();
 
 
-
-
-
 $("#button1").on("click", function () {
 
     userName = $("#userName").val().trim();
@@ -25,9 +22,9 @@ $("#button1").on("click", function () {
     database.ref("/userName").push({
         userName: userName
     });
-
-
+    
   
-});
+})
+
 
 
