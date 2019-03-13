@@ -1,7 +1,7 @@
-body{
+Body{
     height: 100%;
-    font-family: 'Abel', sans-serif;
-    background-image: url(" https://wallpaperplay.com/walls/full/1/5/6/228235.jpg");
+    font-family: 'Bilbo', cursive;
+    background-image: url("http://images6.fanpop.com/image/photos/35900000/House-Martell-house-martell-35977383-1920-1080.jpg");
 
    
 
@@ -12,22 +12,14 @@ body{
     letter-spacing: 2px;
 
     color: white;
-   
 }
-#final-family-name2{
-    text-align: center;
+#final-family-name{
     font-size: 80px;
+    text-align: center;
 
 }
-.card{
-    color: black;
 
-}
-#paragraph{
-    font-size: 25px;
-}
-
-.StarkImg {
+.MartellImg {
     border-style: solid;
     border-width: 5px;
     color: white; 
