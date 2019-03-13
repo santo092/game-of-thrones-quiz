@@ -2,12 +2,12 @@
 // GREYJOY HTML PAGE SLIDESHOT API // 
 
 
-var targaryenImages = ["assets/images/greyjoy.png", "assets/Images/asha-house-greyjoy.jpg"];
-var greyjoyImages = ["assets/images/greyjoy.png", "assets/Images/asha-house-greyjoy.jpg"];
-var martellImages = ["assets/images/greyjoy.png", "assets/Images/asha-house-greyjoy.jpg"];
-var wildlingImages = ["assets/images/greyjoy.png", "assets/Images/asha-house-greyjoy.jpg"];
-var starkImages = ["assets/images/greyjoy.png", "assets/Images/asha-house-greyjoy.jpg"];
-var lannisterImages = ["assets/images/greyjoy.png", "assets/Images/asha-house-greyjoy.jpg"];
+var targaryenImages = ["assets/images/Targaryen2.jpg"];
+var greyjoyImages = ["assets/images/EuronGreyjoy.jpg"];
+var martellImages = ["assets/images/SandSnake.jpg"];
+var wildlingImages = ["assets/images/wildlingssolo.jpg"];
+var starkImages = ["assets/images/Jonsnow.png"];
+var lannisterImages = ["assets/Images/MagaliVilleneuve_CLannister.jpg"];
 
 
 var showImage;
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     var targaryenURL = "https://api.giphy.com/v1/gifs/search?q=targaryen&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
 
-   d
+   
     $.ajax({
         url: targaryenURL,
         method: "GET"
@@ -30,7 +30,7 @@ $(document).ready(function () {
         }
     });
 
-    var GreyJoyURL = "https://api.giphy.com/v1/gifs/search?q=greyjoy&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
+    var GreyJoyURL = "https://api.giphy.com/v1/gifs/search?q=YaraGreyjoy&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
 
   
     $.ajax({
@@ -43,7 +43,7 @@ $(document).ready(function () {
         }
     });
 
-    var queryMartellURL = "https://api.giphy.com/v1/gifs/search?q=oberyn&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
+    var queryMartellURL = "https://api.giphy.com/v1/gifs/search?q=Oberyn&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
 
 
     $.ajax({
@@ -89,7 +89,10 @@ $(document).ready(function () {
     }).then(function (response) {
         var results = response.data
         for (var i = 0; i < 1; i++) {
+
+            
             lannisterImages.push(results[i].images.fixed_height.url)
+
         }
     });
 
@@ -100,28 +103,28 @@ $(document).ready(function () {
 $("#stop").click(stopSlideshow);
 
 function displayImage() {
-    $(".TargaryenSlideShow").html("<img src=" + targaryenImages[count] + " width='400px'>");
-    $(".GreyjoySlideShow").html("<img src=" + greyjoyImages[count] + " width='400px'>");
-    $(".MartellSlideShow").html("<img src=" + martellImages[count] + " width='400px'>");
-    $(".WildlingSlideShow").html("<img src=" + wildlingImages[count] + " width='400px'>");
-    $(".StarkSlideShow").html("<img src=" + starkImages[count] + " width='400px'>");
-    $(".LannisterSlideShow").html("<img src=" + lannisterImages[count] + " width='400px'>");
+    $(".TargaryenSlideShow").html("<img src=" + targaryenImages[count] + " width='400px' height='400px' class='TargaryenImg'>");
+    $(".GreyjoySlideShow").html("<img src=" + greyjoyImages[count] + " width='400px' height='400px' class='GreyjoyImg'>");
+    $(".MartellSlideShow").html("<img src=" + martellImages[count] + " width='400px' height='400px' class='MartellImg'>");
+    $(".WildlingSlideShow").html("<img src=" + wildlingImages[count] + " width='400px' height='400px' class='WildlingImg'>");
+    $(".StarkSlideShow").html("<img src=" + starkImages[count] + " width='400px' height='400px' class='StarkImg'>");
+    $(".LannisterSlideShow").html("<img src=" + lannisterImages[count] + " width='400px' height='400px' class='LannisterImg'>");
 }
 
 function nextImage() {
     count++;
-    $(".TargaryenSlideShow").html("<img src='assets/images/giphy.gif' width='400px'/>");
-    setTimeout(displayImage, 1000);
-    $(".GreyjoySlideShow").html("<img src='assets/images/giphy.gif' width='400px'/>");
-    setTimeout(displayImage, 1000);
-    $(".MartellSlideShow").html("<img src='assets/images/giphy.gif' width='400px'/>");
-    setTimeout(displayImage, 1000);
-    $(".WildlingSlideShow").html("<img src='assets/images/giphy.gif' width='400px'/>");
-    setTimeout(displayImage, 1000);
-    $(".StarkSlideShow").html("<img src='assets/images/giphy.gif' width='400px'/>");
-    setTimeout(displayImage, 1000);
-    $(".LannisterSlideShow").html("<img src='assets/images/giphy.gif' width='400px'/>");
-    setTimeout(displayImage, 1000);
+    $(".TargaryenSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='TargaryenImg'/>");
+    setTimeout(displayImage, 500);
+    $(".GreyjoySlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='GreyjoyImg'/>");
+    setTimeout(displayImage, 500);
+    $(".MartellSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='MartellImg'/>");
+    setTimeout(displayImage, 500);
+    $(".WildlingSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='WildlingImg'/>");
+    setTimeout(displayImage, 500);
+    $(".StarkSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='StarkImg'/>");
+    setTimeout(displayImage, 500);
+    $(".LannisterSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='LannisterImg'/>");
+    setTimeout(displayImage, 500);
     if (count === targaryenImages.length) {
         count = 0;
     }

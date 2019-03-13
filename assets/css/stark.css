@@ -26,3 +26,12 @@ body{
 #paragraph{
     font-size: 25px;
 }
+
+.StarkImg {
+    border-style: solid;
+    border-width: 5px;
+    color: white; 
+    max-width: 100%;
+    max-height: 100%; 
+    
+}
