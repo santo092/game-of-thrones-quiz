@@ -1,0 +1,10 @@
+body{
+    font-family: 'Abel', sans-serif;
+    background-image: url("http://i.imgur.com/9JAg7aN.jpg");
+    background-size: cover;
+}
+#final-family-name{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}

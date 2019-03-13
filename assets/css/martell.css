@@ -1,6 +1,6 @@
 Body{
     height: 100%;
-    font-family: 'Bilbo', cursive;
+    font-family: 'Abel', sans-serif;
     background-image: url("http://images6.fanpop.com/image/photos/35900000/House-Martell-house-martell-35977383-1920-1080.jpg");
 
    
@@ -11,11 +11,12 @@ Body{
 
     letter-spacing: 2px;
 
-    color: white;
+  
 }
 #final-family-name{
     font-size: 80px;
     text-align: center;
+    color: white;
 
 }
 
