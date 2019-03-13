@@ -4,7 +4,7 @@ body{
 
     background-image: url("https://i.pinimg.com/originals/a5/84/84/a5848450f4a286d88c07df41876aaca0.jpg");
 
-    font-family: 'Bilbo', cursive;
+    font-family: 'Abel', sans-serif;
 
     /* font-weight: bolder; */
 
@@ -12,7 +12,7 @@ body{
 
     letter-spacing: 2px;
 
-    color: white;
+  
 
  
 
@@ -23,33 +23,11 @@ body{
     text-align: center;
 
     font-size: 70px;
-
     color: white;
 
+
 }
-
-p{
-
-  
-
+.card-header{
     font-size: 30px;
-
-    color: white;
-
- 
-
-}
-
-
-p{
-    color: white;
-}
-
-.LannisterImg {
-    border-style: solid;
-    border-width: 5px;
-    color: white; 
-    max-width: 100%;
-    max-height: 100%; 
-    
+    font-weight: bold;
 }

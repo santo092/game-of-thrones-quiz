@@ -1,26 +1,14 @@
-Body{
-    height: 100%;
+body{
     font-family: 'Abel', sans-serif;
-    background-image: url("http://images6.fanpop.com/image/photos/35900000/House-Martell-house-martell-35977383-1920-1080.jpg");
-
-   
-
-    /* font-weight: bolder; */
-
+    background-image: url("http://i.imgur.com/9JAg7aN.jpg");
     background-size: cover;
-
-    letter-spacing: 2px;
-
-  
 }
 #final-family-name{
-    font-size: 80px;
     text-align: center;
     color: white;
-
+    font-size: 80px;
 }
-
-.MartellImg {
+.WildlingImg {
     border-style: solid;
     border-width: 5px;
     color: white; 
