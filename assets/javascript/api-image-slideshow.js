@@ -19,27 +19,32 @@ $(document).ready(function () {
 
     var targaryenURL = "https://api.giphy.com/v1/gifs/search?q=targaryen&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
 
-   
+
     $.ajax({
         url: targaryenURL,
         method: "GET"
     }).then(function (response) {
         var results = response.data
         for (var i = 0; i < 1; i++) {
-            targaryenImages.push(results[i].images.fixed_height.url)
+            if (results[i].rating !== "r") {
+
+                targaryenImages.push(results[i].images.fixed_height.url)
+            }
         }
     });
 
     var GreyJoyURL = "https://api.giphy.com/v1/gifs/search?q=YaraGreyjoy&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
 
-  
+
     $.ajax({
         url: GreyJoyURL,
         method: "GET"
     }).then(function (response) {
         var results = response.data
         for (var i = 0; i < 1; i++) {
-            greyjoyImages.push(results[i].images.fixed_height.url)
+            if (results[i].rating !== "r") {
+                greyjoyImages.push(results[i].images.fixed_height.url)
+            }
         }
     });
 
@@ -52,7 +57,9 @@ $(document).ready(function () {
     }).then(function (response) {
         var results = response.data
         for (var i = 0; i < 1; i++) {
-            martellImages.push(results[i].images.fixed_height.url)
+            if (results[i].rating !== "r") {
+                martellImages.push(results[i].images.fixed_height.url)
+            }
         }
     });
     var queryWildlingURL = "https://api.giphy.com/v1/gifs/search?q=tormund&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
@@ -64,35 +71,38 @@ $(document).ready(function () {
     }).then(function (response) {
         var results = response.data
         for (var i = 0; i < 1; i++) {
-            wildlingImages.push(results[i].images.fixed_height.url)
+            if (results[i].rating !== "r") {
+                wildlingImages.push(results[i].images.fixed_height.url)
+            }
         }
     });
     var queryStarkURL = "https://api.giphy.com/v1/gifs/search?q=NedStark&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
 
-  
+
     $.ajax({
         url: queryStarkURL,
         method: "GET"
     }).then(function (response) {
         var results = response.data
         for (var i = 0; i < 1; i++) {
-            starkImages.push(results[i].images.fixed_height.url)
+            if (results[i].rating !== "r") {
+                starkImages.push(results[i].images.fixed_height.url)
+            }
         }
     });
 
     var queryLannisterURL = "https://api.giphy.com/v1/gifs/search?q=lannister&api_key=k7r5BN1vLDpgx9L8kKqGisvZWsE5vt6F";
 
-   
+
     $.ajax({
         url: queryLannisterURL,
         method: "GET"
     }).then(function (response) {
         var results = response.data
         for (var i = 0; i < 1; i++) {
-
-            
-            lannisterImages.push(results[i].images.fixed_height.url)
-
+            if (results[i].rating !== "r") {
+                lannisterImages.push(results[i].images.fixed_height.url)
+            }
         }
     });
 
