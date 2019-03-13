@@ -64,10 +64,23 @@
                 <div class="row">
                     <div class="col-md-2">
                     </div>
-                    <div class="col-md-8 GreyjoySlideShow">
+                    <div class="col-md-7 GreyjoySlideShow">
                         <!-- this is where one of the APIs can go -->
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
+                            <div class="card bg-light mb-3">
+                                    <div class="card-header">Greyjoy</div>
+                                    <div id="cardBody" class="card-body">
+                                        <ul id="unordered">
+                                           
+                                        </ul>
+    
+    
+    
+                                        
+                                       
+                                    </div>
+                                </div>
                     </div>
                 </div>
                 <div class="row">
@@ -126,19 +139,39 @@
 
 
     </div>
-
+    <script src="assets/javascript/firebase.js"></script>
     <script src="assets/javascript/quiz-results.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script>
-        // database.ref("/greyjoys").push({
-        //     username: localStorage.getItem("userName")
-        // });
+            database.ref("/greyjoys").push({
+                username: localStorage.getItem("userName")
 
-        // $("#user-name").text(localStorage.getItem("userName"));
+            });
+
+            var ref = firebase.database().ref("/greyjoys");
+
+            ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
+
+                var userB = snapshot.val().username;
+                console.log(userB);
+                // var ul = $("#unordered").append({
+                   
+                // });
+                $("#unordered").prepend("<li>" + userB + "</li>");
+                
+                
+              
+
+                    // $("#cardBody").append(ul);
+            });
+            
+            $("#user-name").text(localStorage.getItem("userName"));
 
 
-    </script>
+
+
+        </script>
 
 </body>
 
