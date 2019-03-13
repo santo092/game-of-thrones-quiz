@@ -1,7 +1,9 @@
-body{
+Body{
     height: 100%;
     font-family: 'Abel', sans-serif;
-    background-image: url("http://www.portoalegre.travel/upload/b/68/681453_targaryen-iphone-wallpaper.jpg");
+    background-image: url("http://images6.fanpop.com/image/photos/35900000/House-Martell-house-martell-35977383-1920-1080.jpg");
+
+   
 
     /* font-weight: bolder; */
 
@@ -9,27 +11,20 @@ body{
 
     letter-spacing: 2px;
 
-    
-    
+  
 }
 #final-family-name{
+    font-size: 80px;
     text-align: center;
-    font-size: 60px;
     color: white;
-}
-p{
-<<<<<<< HEAD
-    font-size: 30px;
+
 }
 
-.TargaryenImg {
+.MartellImg {
     border-style: solid;
     border-width: 5px;
     color: white; 
     max-width: 100%;
     max-height: 100%; 
     
-=======
-
->>>>>>> a3cd36052af58194bdc51f41c3032489e9519c89
 }

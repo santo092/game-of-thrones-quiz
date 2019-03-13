@@ -5,84 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quiz Results</title>
+    <title>Wildlings</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/wildlings.css">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 </head>
 
 <body>
-
-        <h1 id="final-family-name"><span id="user-name"></span> Welcome to House Lannister!</h1>
-
-    <p id="final-family-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus praesentium
-        perspiciatis eius dicta
-        repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-        aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus praesentium perspiciatis eius dicta
-        repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-        aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus praesentium perspiciatis eius dicta
-        repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-        aliquid consectetur reprehenderit maiores.</p>
-
-    <div class="container-quiz-results">
-        <h1 id="final-family-name">Welcome to the Wildlings Family!</h1>
-        <p id="final-family-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
-            praesentium
-            perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus praesentium perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores. orem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus praesentium perspiciatis eius dicta
-            repellat, excepturi nostrum, rem molestias, aspernatur rerum dolorem quibusdam fugit laborum dolore. Animi
-            aliquid consectetur reprehenderit maiores.</p>
-
-
-        <h3>How did you place with others who took the quiz?</h3>
-
+    <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-header">Your house is: Placeholder Name</div>
+            <div class="col-md-12">
+                <h1 id="final-family-name">Welcome to Free Folk!</h1>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/Images/wildlings.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <table class="table table-sm table-hover" id='all-results-table'>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Targaryen: Anarchy</th>
-                                    <th scope="col">Martell: Liberal</th>
-                                    <th scope="col">Stark: Moderate</th>
-                                    <th scope="col">Lannister: Conservative</th>
-                                    <th scope="col">Wildlings: Independent</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
+                            Also known as
+                            Wildlings
+                            <hr>
+                            Place of origin:
+                            Beyond the Wall
+                            <hr>
+                            Predecessors:
+                            First Men
+                            
+                         
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <h3>Your Personalized Reading List</h3>
-                <ul class="list-group list-group-flush articles">
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                    <a href="#" class="list-group-item list-group-item-action">Book Recommendation</a>
-                </ul>
-            </div>
-        </div>
+
+            <div class="col-md-8">
+                <div class="card border-light mb-3">
+                    <div class="card-header"><span id="user-name"></span> of the Free Folk </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Free Folk </h5>
+                        <p class="card-text">is the self-given name for the people who live in the lands beyond the
+                            Wall, still on the continent of Westeros but beyond the northern border of the Seven
+                            Kingdoms. The name they employ makes reference to their society, which recognizes no
+                            inherent or hereditary political authority, except for leaders whom they choose to follow.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+
     </div>
 
-    <script src="assets/javascript/firebase.js"></script>
-    <script src="assets/javascript/quiz-results.js"></script>
+
+    </div>
+
+
+    <script src="assets/javascript/config.js"></script>
+    <script src="assets/javascript/quiz-script.js"></script>
+    <script>
+        database.ref("/wildlings").push({
+            username: localStorage.getItem("userName")
+        });
+
+        $("#user-name").text(localStorage.getItem("userName"));
+    </script>
 </body>
 
 </html>
