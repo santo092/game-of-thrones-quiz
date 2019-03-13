@@ -20,12 +20,16 @@
 <body>
 
     <div class="container">
+        <br>
         <div class="row">
             <div class="col-md-12">
+                
                 <h1 id="final-family-name"> Welcome to House Targaryen!</h1>
-
+            
             </div>
+
         </div>
+        <br>
         <div class="row">
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
@@ -61,10 +65,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-8 TargaryenSlideShow">
+                    <div class="col-md-7 TargaryenSlideShow">
                         <!-- this is where one of the APIs can go  -->
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                            <div class="card bg-light mb-3">
+                                <div class="card-header">House Targaryen</div>
+                                <div class="card-body"> <h5 class="card-title">Light card title</h5>
+                                      <p class="card-text"></p>
+                                    </div>
+                            </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2"></div>
@@ -122,15 +133,31 @@
     <script src="assets/javascript/config.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>
-    <script>
-        database.ref("/targaryen").push({
-            username: localStorage.getItem("userName")
-        });
+   
+      <script>
+            database.ref("/targaryen").push({
+                username: localStorage.getItem("userName")
+    
+            });
+    
+            var ref = firebase.database().ref("/targeryen");
+            ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
+           
+                var userB = snapshot.val().username;
+                console.log(userB);
+    
+               
+            });
+    
+            $("#user-name").text(localStorage.getItem("userName"));
+    
+    
+    
+        </script>
 
-        $("#user-name").text(localStorage.getItem("userName"));
 
 
-    </script>
+
 </body>
 
 </html>

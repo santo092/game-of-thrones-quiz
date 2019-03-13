@@ -1,6 +1,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 9fa2557502c4ba63d23d2af632225d9bb387dbcf
@@ -183,6 +184,8 @@ var questions = [{
 
 
 =======
+=======
+>>>>>>> 75d384082f536fe886a87b8cac3c98279890423a
  $("#button1").click(function (event) {
    
     window.location.href = "questions.html";
@@ -325,7 +328,7 @@ var questions = [{
       "option3" : "  Social responsibility is cornerstone of any successful nation  ", 
       "option4" : "  It can vary from day to day.", 
       "option5" : "  I think there needs to be a balance of both.", 
-      "option6" : "  Whichever gets the bills paid quicker and makes the nation richer.", 
+      "option6" : " Whichever gets the bills paid quicker and makes the nation richer.", 
       "answer1": "T",
       "answer2": "G",
       "answer3": "M",
@@ -335,12 +338,17 @@ var questions = [{
   }]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // var gender = $("#gender1");
 // gender.text(Female);
 >>>>>>> 59218532ef688ee7af47c0a99a57e772a70eceae
 =======
 
 >>>>>>> 9fa2557502c4ba63d23d2af632225d9bb387dbcf
+=======
+// var gender = $("#gender1");
+// gender.text(Female);
+>>>>>>> 75d384082f536fe886a87b8cac3c98279890423a
 
 
 
