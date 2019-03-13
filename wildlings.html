@@ -58,10 +58,24 @@
                 </div>
                 <div class="row">
                     <div class="col-md-2"></div>
-                    <div class="col-md-8 WildlingSlideShow">
+                    <div class="col-md-7 WildlingSlideShow">
                         <!-- this is where one of the APIs can go  -->
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-3">
+                            <div class="card bg-light mb-3">
+                                    <div class="card-header">Wildlings</div>
+                                    <div id="cardBody" class="card-body">
+                                        <ul id="unordered">
+                                           
+                                        </ul>
+    
+    
+    
+                                        
+                                       
+                                    </div>
+                                </div>
+                    </div>
                 </div>
                 <div class="row">
                         <div class="col-md-12">
@@ -80,9 +94,32 @@
     <script src="assets/javascript/quiz-script.js"></script>
     <script src="assets/javascript/getArticles.js"></script>
     <script>
-        database.ref("/wildlings").push({
-            username: localStorage.getItem("userName")
-        });
+            database.ref("/wildlings").push({
+                username: localStorage.getItem("userName")
+
+            });
+
+            var ref = firebase.database().ref("/wildlings");
+
+            ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
+
+                var userB = snapshot.val().username;
+                console.log(userB);
+                // var ul = $("#unordered").append({
+                   
+                // });
+                $("#unordered").prepend("<li>" + userB + "</li>");
+                
+                
+              
+
+                    // $("#cardBody").append(ul);
+            });
+            
+            $("#user-name").text(localStorage.getItem("userName"));
+
+
+
 
         $("#user-name").text(localStorage.getItem("userName"));
 
