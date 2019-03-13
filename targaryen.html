@@ -70,11 +70,18 @@
                     </div>
                     <div class="col-md-3">
                             <div class="card bg-light mb-3">
-                                <div class="card-header">House Targaryen</div>
-                                <div class="card-body"> <h5 class="card-title">Light card title</h5>
-                                      <p class="card-text"></p>
+                                    <div id="nameOfThe" class="card-header">Targaryen</div>
+                                    <div id="cardBody" class="card-body">
+                                        <ul id="unordered">
+                                           
+                                        </ul>
+    
+    
+    
+                                        
+                                       
                                     </div>
-                            </div>
+                                </div>
                     </div>
                 </div>
                 <div class="row">
@@ -129,7 +136,7 @@
         </div>
 
     </div>
-
+    <!-- <script src="assets/javascript/firebase.js"></script> -->
     <script src="assets/javascript/config.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>
@@ -140,11 +147,12 @@
     
             });
     
-            var ref = firebase.database().ref("/targeryen");
+            var ref = firebase.database().ref("/targaryen");
             ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
            
                 var userB = snapshot.val().username;
                 console.log(userB);
+                $("#unordered").prepend("<li>" + userB + "</li>");
     
                
             });
