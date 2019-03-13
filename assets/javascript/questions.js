@@ -1,5 +1,9 @@
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9fa2557502c4ba63d23d2af632225d9bb387dbcf
 // function validateForm() {
 //   var x = $("#userName")
 //   if (x == "") {
@@ -330,9 +334,13 @@ var questions = [{
       "answer6": "L"
   }]
 
+<<<<<<< HEAD
 // var gender = $("#gender1");
 // gender.text(Female);
 >>>>>>> 59218532ef688ee7af47c0a99a57e772a70eceae
+=======
+
+>>>>>>> 9fa2557502c4ba63d23d2af632225d9bb387dbcf
 
 
 
