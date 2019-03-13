@@ -7,9 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Greyjoys</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/greyjoys.css">
+
+
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
@@ -52,9 +55,11 @@
                     <div class="card-header"><span id="user-name"></span> of House Greyjoy</div>
                     <div class="card-body">
                         <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules
-                            over the Iron Islands, a harsh and bleak collection of islands off the west coast of
-                            Westeros, from the castle at Pyke. </p>
+
+                        <p class="card-text">House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules over
+                            the Iron Islands, a harsh and bleak collection of islands off the west coast of Westeros,
+                            from the castle at Pyke. </p>
+
                     </div>
                 </div>
                 <div class="row">
@@ -62,7 +67,10 @@
                         <!-- this is where one of the APIs can go -->
                     </div>
                     <div class="col-md-6">
-                        <!-- this is where one of the APIs can go -->
+                        <h3>Your Personalized Reading List</h3>
+                        <ul class="list-group list-group-flush articles">
+                            <!-- <li class="list-group-item list-group-item-action"><a href="#"></a></li> -->
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -73,18 +81,15 @@
 
     </div>
 
-
-    <!-- <script src="assets/javascript/quiz-reults.js"></script>
-    <script src="assets/javascript/api-image-slideshow.js"></script> -->
-
-    <script src="assets/javascript/config.js"></script>
+    <script src="assets/javascript/quiz-results.js"></script>
+    <script src="assets/javascript/quiz-script.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script>
-        database.ref("/greyjoys").push({
-            username: localStorage.getItem("userName")
-        });
+        // database.ref("/greyjoys").push({
+        //     username: localStorage.getItem("userName")
+        // });
 
-        $("#user-name").text(localStorage.getItem("userName"));
+        // $("#user-name").text(localStorage.getItem("userName"));
 
 
     </script>
