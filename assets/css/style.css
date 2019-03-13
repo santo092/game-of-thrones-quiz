@@ -64,7 +64,23 @@ body{
     background-size: cover;
 
 }
+.center{
 
+    width: 200px;
+  
+    height: 600px;
+  
+    margin:auto;
+  
+    position: absolute;
+  
+    top: 0px; bottom: 0px; right: 0px; left: 0px;
+  
+}  
+#exampleModal{
+    background-image: url("https://wallpaperaccess.com/full/544179.jpg");
+    background-size: cover;
+}
 .container-quiz-results{
 
     color: white;
