@@ -303,6 +303,7 @@ if ((score <= 120) && (score > 100)) {
     getArticlesByCategory("conservative");
 }
 
+getArticlesByCategory("socialist") 
 
 
 
