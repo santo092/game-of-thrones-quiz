@@ -9,21 +9,12 @@
   
   var questions = [{
       "question" : " Should the government of a nation play a role in how the economy is regulated?  If so, how big of one??",
-<<<<<<< HEAD
-      "option1" : " I shall be the final authority on any policies governing economics", 
-      "option2" : " The govermnet should play no role in regulating its country's economy.  ", 
-      "option3" : " The government should play a huge role in how the economy is regulated.", 
-      "option4" : " Economics?  We don't need no stinking economics.  Quid pro quo is good enough for us", 
-      "option5" : " The government should play a moderate role in regulating its country's economy", 
-      "option6" : " The govermnet should play very little role in regulating its country's economy.", 
-=======
       "option1" : "  I shall be the final authority on any policies governing economics", 
       "option2" : "  The govermnet should play no role in regulating its country's economy.  ", 
       "option3" : "  The government should play a huge role in how the economy is regulated.", 
       "option4" : "  Economics?  We don't need no stinking economics.  Quid pro quo is good enough for us", 
       "option5" : "  The government should play a moderate role in regulating its country's economy", 
       "option6" : "  The govermnet should play very little role in regulating its country's economy.", 
->>>>>>> 38e91c001a71348ead0b562d9d5bdfec8bc101f5
       "answer1": "T",
       "answer2": "G",
       "answer3": "M",
