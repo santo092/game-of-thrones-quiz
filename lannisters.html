@@ -16,8 +16,8 @@
 
     <!-- this is a link to bootstrap -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- this is a link to google fonts -->
 
@@ -109,83 +109,32 @@
 
                 <div class="row">
 
-                    
-
-                        <div class="col-md-2"></div>
-                        <div class="col-md-7 LannisterSlideShow">
 
 
-                            <!-- this is where one of the APIs can go -->
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card bg-light mb-3">
-                                <div class="card-header">House Targaryen</div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Light card title</h5>
-                                    <p class="card-text"></p>
-                                </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-7 LannisterSlideShow">
+
+
+                        <!-- this is where one of the APIs can go -->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light mb-3">
+                            <div class="card-header">House Targaryen</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Light card title</h5>
+                                <p class="card-text"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                        </div>
-                        <div class="col-md-8">
-                            <!-- this is where one of the APIs can go -->
-                            <table class="articles">
-                                <tr>
-                                    <td>
-                                        <table>
-                                            <tr">
-                                    <th>Header 1</th>
-                                    <th>Header 2</th>
-                                </tr>
-                            </table>
-                            </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div style="width:320px; height:60px; overflow:auto;">
-                                        <table>
-                                            <tr>
-                                                <td>new item</td>
-                                                <td>new item</td>
-                                            </tr>
-                                            <tr>
-                                                <td>new item</td>
-                                                <td>new item</td>
-                                            </tr>
-                                            <tr>
-                                                <td>new item</td>
-                                                <td>new item</td>
-                                            </tr>
-                                            <tr>
-                                                <td>new item</td>
-                                                <td>new item</td>
-                                            </tr>
-                                            <tr>
-                                                <td>new item</td>
-                                                <td>new item</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </td>
-                            </tr>
-                            </table>
-                        </div>
-                        <div class="col-md-2">
-                        </div>
-                    </div>
-
-
                 </div>
-
-
-
-
-
-
-
+                <div class="row">
+                        <div class="col-md-12">
+                            <!-- this is where one of the APIs can go  -->
+                            <h1>Recommended Reading</h1>
+                            <ul class="articles"></ul>
+                    </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -197,6 +146,7 @@
             <script src="assets/javascript/config.js"></script>
             <script src="assets/javascript/api-image-slideshow.js"></script>
             <script src="assets/javascript/quiz-script.js"></script>
+            <script src="assets/javascript/getArticles.js"></script>
             <script>
                 database.ref("/lannister").push({
                     username: localStorage.getItem("userName")
@@ -214,7 +164,7 @@
 
                 $("#user-name").text(localStorage.getItem("userName"));
 
-
+                getArticlesByCategory("conservative");
 
             </script>
 
