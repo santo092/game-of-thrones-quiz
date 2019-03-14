@@ -7,7 +7,7 @@ var greyjoyImages = ["assets/images/EuronGreyjoy.jpg"];
 var martellImages = ["assets/images/SandSnake.jpg"];
 var wildlingImages = ["assets/images/wildlingssolo.jpg"];
 var starkImages = ["assets/images/Jonsnow.png"];
-var lannisterImages = ["assets/Images/MagaliVilleneuve_CLannister.jpg"];
+var lannisterImages = ["assets/images/MagaliVilleneuve_CLannister.jpg"];
 
 
 var showImage;
