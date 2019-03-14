@@ -58,7 +58,7 @@
                     <div class="card-header"><span id="user-name"></span> of House Targaryen</div>
                     <div class="card-body">
                         <h5 class="card-title">House Targaryen</h5>
-                        <p class="card-text">House Targaryen of Dragonstone is a Great House of Westeros and was the
+                        <p class="card-text">of Dragonstone is a Great House of Westeros and was the
                             ruling royal House of the Seven Kingdoms for three centuries since it conquered and unified
                             the realm.</p>
                     </div>
@@ -107,11 +107,13 @@
 
         });
 
-        var ref = firebase.database().ref("/targeryen");
+        var ref = firebase.database().ref("/targaryen");
         ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
 
             var userB = snapshot.val().username;
             console.log(userB);
+
+            $("#unordered").prepend("<li>" + userB + "</li>")
 
 
         });
