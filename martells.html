@@ -56,83 +56,77 @@
                 <div class="row">
                     <div class="col-md-2">
                     </div>
-                    <div class="col-md-8 MartellSlideShow">
+                    <div class="col-md-7 MartellSlideShow">
                         <!--this is where one of the APIs can go   -->
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
+                        <div class="card bg-light mb-3">
+                            <div id="nameOfThe" class="card-header">Martells</div>
+                            <div id="cardBody" class="card-body">
+                                <ul id="unordered">
+
+                                </ul>
+
+
+
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2">
-                    </div>
-                    <div class="col-md-8">
-                        <!--this is where one of the APIs can go   -->
-                        <table class="articles">
-                            <tr>
-                                <td>
-                                    <table>
-                                        <tr">
-                                <th>Header 1</th>
-                                <th>Header 2</th>
-                            </tr>
-                        </table>
-                        </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div style="width:320px; height:60px; overflow:auto;">
-                                    <table>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </td>
-                        </tr>
-                        </table>
-                    </div>
-                    <div class="col-md-2">
+                    <div class="col-md-12">
+                        <!-- this is where one of the APIs can go  -->
+                        <h1>Recommended Reading</h1>
+                        <ul class="articles"></ul>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
+
+
+
+    </div>
 
     </div>
     <script src="assets/javascript/config.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>
+    <script src="assets/javascript/getArticles.js"></script>
     <script>
         database.ref("/martells").push({
             username: localStorage.getItem("userName")
+
+        });
+
+        var ref = firebase.database().ref("/martells");
+
+        ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
+
+            var userB = snapshot.val().username;
+            console.log(userB);
+            // var ul = $("#unordered").append({
+
+            // });
+            $("#unordered").prepend("<li>" + userB + "</li>");
+
+
+
+
+            // $("#cardBody").append(ul);
         });
 
         $("#user-name").text(localStorage.getItem("userName"));
 
 
+
+        getArticlesByCategory("liberal");
+
     </script>
 
 </body>
-<!-- <script src="assets/javascript/firebase.js"></script>
+<script src="assets/javascript/firebase.js"></script>
 <script src="assets/javascript/quiz-results.js"></script> -->
 
 

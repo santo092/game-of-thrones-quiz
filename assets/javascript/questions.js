@@ -1,6 +1,3 @@
-
-
-
 $("#button1").click(function (event) {
 
     if ($("#userName").val() !== "") {
