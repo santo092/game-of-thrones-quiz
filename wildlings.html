@@ -62,38 +62,38 @@
                         <!-- this is where one of the APIs can go  -->
                     </div>
                     <div class="col-md-3">
-                            <div class="card bg-light mb-3">
-                                    <div class="card-header">Wildlings</div>
-                                    <div id="cardBody" class="card-body">
-                                        <ul id="unordered">
-                                           
-                                        </ul>
-    
-    
-    
-                                        
-                                       
-                                    </div>
-                                </div>
+                        <div class="card bg-light mb-3">
+                            <div class="card-header">Wildlings</div>
+                            <div id="cardBody" class="card-body">
+                                <ul id="unordered">
+
+                                </ul>
+
+
+
+
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                        <div class="col-md-12">
-                            <!-- this is where one of the APIs can go  -->
-                            <h1>Recommended Reading</h1>
-                            <ul class="articles"></ul>
+                    <div class="col-md-12">
+                        <!-- this is where one of the APIs can go  -->
+                        <h1>Recommended Reading</h1>
+                        <ul class="articles"></ul>
                     </div>
+                </div>
             </div>
+
+
         </div>
 
-
-    </div>
-
-    <script src="assets/javascript/api-image-slideshow.js"></script>
-    <script src="assets/javascript/config.js"></script>
-    <script src="assets/javascript/quiz-script.js"></script>
-    <script src="assets/javascript/getArticles.js"></script>
-    <script>
+        <script src="assets/javascript/api-image-slideshow.js"></script>
+        <script src="assets/javascript/config.js"></script>
+        <script src="assets/javascript/quiz-script.js"></script>
+        <script src="assets/javascript/getArticles.js"></script>
+        <script>
             database.ref("/wildlings").push({
                 username: localStorage.getItem("userName")
 
@@ -106,25 +106,25 @@
                 var userB = snapshot.val().username;
                 console.log(userB);
                 // var ul = $("#unordered").append({
-                   
+
                 // });
                 $("#unordered").prepend("<li>" + userB + "</li>");
-                
-                
-              
 
-                    // $("#cardBody").append(ul);
+
+
+
+                // $("#cardBody").append(ul);
             });
-            
+
             $("#user-name").text(localStorage.getItem("userName"));
 
 
 
 
-        $("#user-name").text(localStorage.getItem("userName"));
+            $("#user-name").text(localStorage.getItem("userName"));
 
-        getArticlesByCategory("independent");
-    </script>
+            getArticlesByCategory("independent");
+        </script>
 </body>
 
 </html>

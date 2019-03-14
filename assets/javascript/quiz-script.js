@@ -383,68 +383,68 @@ loadQuestion(currentQuestion)
 
 // function for news & articles API
 
-function getArticlesByCategory(query) {
-    var queryUrl = "https://newsapi.org/v2/everything?q=" + query + "&apiKey=a644d0814d0848ed9c6a8f4400eb2eef&pageSize=4";
-    $.ajax({
-        url: queryUrl,
-        method: "GET"
-    })
-        .then(function (response) {
-            // <a href="#" class="list-group-item list-group-item-action">Arrticle Recommendation</a>
-            // pseudo-code to create list of article links
-            // when response from newsapi is received
-            // get a reference to the articles array
-            // for each article in the array
-            // create a var to hold a new a tag
-            // put url in href of a tag
-            // put article title in a tag text
-             // create a var to hold a new li tag
-             // add classes to the li
-             // append the a tag to the li
-              // append the li into the ul
+// function getArticlesByCategory(query) {
+//     var queryUrl = "https://newsapi.org/v2/everything?q=" + query + "&apiKey=a644d0814d0848ed9c6a8f4400eb2eef&pageSize=4";
+//     $.ajax({
+//         url: queryUrl,
+//         method: "GET"
+//     })
+//         .then(function (response) {
+//             // <a href="#" class="list-group-item list-group-item-action">Arrticle Recommendation</a>
+//             // pseudo-code to create list of article links
+//             // when response from newsapi is received
+//             // get a reference to the articles array
+//             // for each article in the array
+//             // create a var to hold a new a tag
+//             // put url in href of a tag
+//             // put article title in a tag text
+//              // create a var to hold a new li tag
+//              // add classes to the li
+//              // append the a tag to the li
+//               // append the li into the ul
 
-            var articles = response.articles;
-            for (var i = 0; i < articles.length; i++) {
-                var a = $("<a>");
-                a.attr("href", articles[i].url);
-                a.text(articles[i].title);
-                var li = $("<li>");
-                li.attr("class", "list-group-item list-group-item-action");
-                li.append(a);
-                $(".articles").append(li);
-            }
-            // for (var i = 0; i < response.articles.length; i++) {
-            //     var a = $("<a>").text(response.articles[i].title);
-            //     a.addClass("list-group-item list-group-item-action");
-            //     a.attr("href", response.articles[i].url);
-            //     $(".articles").append(a);
-            // }
-        });
-}
+//             var articles = response.articles;
+//             for (var i = 0; i < articles.length; i++) {
+//                 var a = $("<a>");
+//                 a.attr("href", articles[i].url);
+//                 a.text(articles[i].title);
+//                 var li = $("<li>");
+//                 li.attr("class", "list-group-item list-group-item-action");
+//                 li.append(a);
+//                 $(".articles").append(li);
+//             }
+//             // for (var i = 0; i < response.articles.length; i++) {
+//             //     var a = $("<a>").text(response.articles[i].title);
+//             //     a.addClass("list-group-item list-group-item-action");
+//             //     a.attr("href", response.articles[i].url);
+//             //     $(".articles").append(a);
+//             // }
+//         });
+// }
 
-if (score <= 20) {
-    getArticlesByCategory("anarchy");
-}
+// if (score <= 20) {
+//     getArticlesByCategory("anarchy");
+// }
 
-if ((score <= 40) && (score > 20)) {
-    getArticlesByCategory("libertarian");
-}
+// if ((score <= 40) && (score > 20)) {
+//     getArticlesByCategory("libertarian");
+// }
 
-if ((score <= 60) && (score > 40)) {
-    getArticlesByCategory("liberal");
-}
+// if ((score <= 60) && (score > 40)) {
+//     getArticlesByCategory("liberal");
+// }
 
-if ((score <= 80) && (score > 60)) {
-    getArticlesByCategory("independent");
-}
+// if ((score <= 80) && (score > 60)) {
+//     getArticlesByCategory("independent");
+// }
 
-if ((score < 100) && (score > 80)) {
-    getArticlesByCategory("moderate");
-}
+// if ((score < 100) && (score > 80)) {
+//     getArticlesByCategory("moderate");
+// }
 
-if ((score <= 120) && (score > 100)) {
-    getArticlesByCategory("conservative");
-}
+// if ((score <= 120) && (score > 100)) {
+//     getArticlesByCategory("conservative");
+// }
 
 
 
