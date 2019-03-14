@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Martells</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/martell.css">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -61,7 +61,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card bg-light mb-3">
-                            <div id="nameOfThe"class="card-header">Martells</div>
+                            <div id="nameOfThe" class="card-header">Martells</div>
                             <div id="cardBody" class="card-body">
                                 <ul id="unordered">
 
@@ -76,97 +76,58 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2">
-                    </div>
-                    <div class="col-md-8">
-                        <!--this is where one of the APIs can go   -->
-                        <table class="articles">
-                            <tr>
-                                <td>
-                                    <table>
-                                        <tr">
-                                <th>Header 1</th>
-                                <th>Header 2</th>
-                            </tr>
-                        </table>
-                        </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div style="width:320px; height:60px; overflow:auto;">
-                                    <table>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </td>
-                        </tr>
-                        </table>
-                    </div>
-                    <div class="col-md-2">
+                    <div class="col-md-12">
+                        <!-- this is where one of the APIs can go  -->
+                        <h1>Recommended Reading</h1>
+                        <ul class="articles"></ul>
                     </div>
                 </div>
             </div>
-
-
-
         </div>
+
+
+
+    </div>
 
     </div>
     <script src="assets/javascript/config.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>
+    <script src="assets/javascript/getArticles.js"></script>
     <script>
-            database.ref("/martells").push({
-                username: localStorage.getItem("userName")
+        database.ref("/martells").push({
+            username: localStorage.getItem("userName")
 
-            });
+        });
 
-            var ref = firebase.database().ref("/martells");
+        var ref = firebase.database().ref("/martells");
 
-            ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
+        ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
 
-                var userB = snapshot.val().username;
-                console.log(userB);
-                // var ul = $("#unordered").append({
-                   
-                // });
-                $("#unordered").prepend("<li>" + userB + "</li>");
-                
-                
-              
+            var userB = snapshot.val().username;
+            console.log(userB);
+            // var ul = $("#unordered").append({
 
-                    // $("#cardBody").append(ul);
-            });
-            
-            $("#user-name").text(localStorage.getItem("userName"));
+            // });
+            $("#unordered").prepend("<li>" + userB + "</li>");
 
 
 
 
-        </script>
+            // $("#cardBody").append(ul);
+        });
 
-</body >
- <script src = "assets/javascript/firebase.js" ></script>
-    <script src="assets/javascript/quiz-results.js"></script> -->
+        $("#user-name").text(localStorage.getItem("userName"));
+
+
+
+        getArticlesByCategory("liberal");
+
+    </script>
+
+</body>
+<script src="assets/javascript/firebase.js"></script>
+<script src="assets/javascript/quiz-results.js"></script> -->
 
 
 </html>

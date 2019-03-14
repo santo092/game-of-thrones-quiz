@@ -23,9 +23,9 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                
+
                 <h1 id="final-family-name"> Welcome to House Targaryen!</h1>
-            
+
             </div>
 
         </div>
@@ -85,51 +85,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <!-- this is where one of the APIs can go  -->
-                        <table class="articles">
-                            <tr>
-                                <td>
-                                    <table>
-                                        <tr">
-                                <th>Header 1</th>
-                                <th>Header 2</th>
-                            </tr>
-                        </table>
-                        </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div style="width:320px; height:60px; overflow:auto;">
-                                    <table>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                        <tr>
-                                            <td>new item</td>
-                                            <td>new item</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </td>
-                        </tr>
-                        </table>
-                    </div>
-                    <div class="col-md-2"></div>
+                        <h1>Recommended Reading</h1>
+                        <ul class="articles"></ul>
                 </div>
 
             </div>
@@ -140,28 +99,28 @@
     <script src="assets/javascript/config.js"></script>
     <script src="assets/javascript/api-image-slideshow.js"></script>
     <script src="assets/javascript/quiz-script.js"></script>
-   
-      <script>
-            database.ref("/targaryen").push({
-                username: localStorage.getItem("userName")
-    
-            });
-    
-            var ref = firebase.database().ref("/targaryen");
-            ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
-           
-                var userB = snapshot.val().username;
-                console.log(userB);
-                $("#unordered").prepend("<li>" + userB + "</li>");
-    
-               
-            });
-    
-            $("#user-name").text(localStorage.getItem("userName"));
-    
-    
-    
-        </script>
+    <script src="assets/javascript/getArticles.js"></script>
+
+    <script>
+        database.ref("/targaryen").push({
+            username: localStorage.getItem("userName")
+
+        });
+
+        var ref = firebase.database().ref("/targeryen");
+        ref.orderByChild("username").limitToFirst(10).on("child_added", function (snapshot) {
+
+            var userB = snapshot.val().username;
+            console.log(userB);
+
+
+        });
+
+        $("#user-name").text(localStorage.getItem("userName"));
+
+        getArticlesByCategory("anarchist");
+
+    </script>
 
 
 
