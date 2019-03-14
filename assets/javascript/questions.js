@@ -1,16 +1,10 @@
+$("#button1").click(function (event) {
 
- $("#button1").click(function (event) {
-   
-    window.location.href = "questions.html";
-    
-  
-   });
-  
- 
+    if ($("#userName").val() !== "") {
 
+        window.location.href = "questions.html";
 
-
-
-
+    }
+});
 
 
