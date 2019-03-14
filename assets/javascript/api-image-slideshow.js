@@ -25,6 +25,7 @@ $(document).ready(function () {
         method: "GET"
     }).then(function (response) {
         var results = response.data
+        console.log(results)
         for (var i = 0; i < 1; i++) {
             if (results[i].rating !== "r") {
 
@@ -41,6 +42,7 @@ $(document).ready(function () {
         method: "GET"
     }).then(function (response) {
         var results = response.data
+        console.log(results)
         for (var i = 0; i < 1; i++) {
             if (results[i].rating !== "r") {
                 greyjoyImages.push(results[i].images.fixed_height.url)
@@ -56,6 +58,7 @@ $(document).ready(function () {
         method: "GET"
     }).then(function (response) {
         var results = response.data
+        console.log(results)
         for (var i = 0; i < 1; i++) {
             if (results[i].rating !== "r") {
                 martellImages.push(results[i].images.fixed_height.url)
@@ -70,9 +73,10 @@ $(document).ready(function () {
         method: "GET"
     }).then(function (response) {
         var results = response.data
+        console.log(results)
         for (var i = 0; i < 1; i++) {
             if (results[i].rating !== "r") {
-                wildlingImages.push(results[i].images.fixed_height.url)
+                wildlingImages.push(results[1].images.fixed_height.url)
             }
         }
     });
@@ -84,6 +88,7 @@ $(document).ready(function () {
         method: "GET"
     }).then(function (response) {
         var results = response.data
+        console.log(results)
         for (var i = 0; i < 1; i++) {
             if (results[i].rating !== "r") {
                 starkImages.push(results[i].images.fixed_height.url)
@@ -99,9 +104,10 @@ $(document).ready(function () {
         method: "GET"
     }).then(function (response) {
         var results = response.data
+        console.log(results)
         for (var i = 0; i < 1; i++) {
             if (results[i].rating !== "r") {
-                lannisterImages.push(results[i].images.fixed_height.url)
+                lannisterImages.push(results[3].images.fixed_height.url)
             }
         }
     });
