@@ -2,12 +2,12 @@
 // GREYJOY HTML PAGE SLIDESHOT API // 
 
 
-var targaryenImages = ["assets/images/targaryen2.jpg"];
-var greyjoyImages = ["assets/images/euronGreyjoy.jpg"];
-var martellImages = ["assets/images/sandSnake.jpg"];
-var wildlingImages = ["assets/images/wildlingssolo.jpg"];
-var starkImages = ["assets/images/jonsnow.png"];
-var lannisterImages = ["assets/images/magaliVilleneuve_CLannister.jpg"];
+var targaryenImages = ["assets/slideshow/targaryen2.jpg"];
+var greyjoyImages = ["assets/slideshow/euronGreyjoy.jpg"];
+var martellImages = ["assets/slideshow/sandSnake.jpg"];
+var wildlingImages = ["assets/slideshow/wildlingssolo.jpg"];
+var starkImages = ["assets/slideshow/jonsnow.png"];
+var lannisterImages = ["assets/slideshow/magaliVilleneuve_CLannister.jpg"];
 
 
 var showImage;
@@ -129,17 +129,17 @@ function displayImage() {
 
 function nextImage() {
     count++;
-    $(".TargaryenSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='TargaryenImg'/>");
+    $(".TargaryenSlideShow").html("<img src='assets/slideshow/giphy.gif' width='400px' height='400px' class='TargaryenImg'/>");
     setTimeout(displayImage, 500);
-    $(".GreyjoySlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='GreyjoyImg'/>");
+    $(".GreyjoySlideShow").html("<img src='assets/slideshow/giphy.gif' width='400px' height='400px' class='GreyjoyImg'/>");
     setTimeout(displayImage, 500);
-    $(".MartellSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='MartellImg'/>");
+    $(".MartellSlideShow").html("<img src='assets/slideshow/giphy.gif' width='400px' height='400px' class='MartellImg'/>");
     setTimeout(displayImage, 500);
-    $(".WildlingSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='WildlingImg'/>");
+    $(".WildlingSlideShow").html("<img src='assets/slideshow/giphy.gif' width='400px' height='400px' class='WildlingImg'/>");
     setTimeout(displayImage, 500);
-    $(".StarkSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='StarkImg'/>");
+    $(".StarkSlideShow").html("<img src='assets/slideshow/giphy.gif' width='400px' height='400px' class='StarkImg'/>");
     setTimeout(displayImage, 500);
-    $(".LannisterSlideShow").html("<img src='assets/images/giphy.gif' width='400px' height='400px' class='LannisterImg'/>");
+    $(".LannisterSlideShow").html("<img src='assets/slideshow/giphy.gif' width='400px' height='400px' class='LannisterImg'/>");
     setTimeout(displayImage, 500);
     if (count === targaryenImages.length) {
         count = 0;
