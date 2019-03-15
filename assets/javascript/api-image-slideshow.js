@@ -2,12 +2,12 @@
 // GREYJOY HTML PAGE SLIDESHOT API // 
 
 
-var targaryenImages = ["assets/slideshow/targaryen2.jpg"];
-var greyjoyImages = ["assets/slideshow/euronGreyjoy.jpg"];
-var martellImages = ["assets/slideshow/sandSnake.jpg"];
+var targaryenImages = ["assets/slideshow/targDragon.jpg"];
+var greyjoyImages = ["assets/slideshow/eGreyjoy.jpg"];
+var martellImages = ["assets/slideshow/sandSnakes.jpg"];
 var wildlingImages = ["assets/slideshow/wildlingssolo.jpg"];
-var starkImages = ["assets/slideshow/jonsnow.png"];
-var lannisterImages = ["assets/slideshow/magaliVilleneuve_CLannister.jpg"];
+var starkImages = ["assets/slideshow/jonsnow1.png"];
+var lannisterImages = ["assets/slideshow/magaliVilleneuve_CLannister1.jpg"];
 
 
 var showImage;
