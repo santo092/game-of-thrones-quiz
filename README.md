@@ -1,4 +1,4 @@
-# Project-1
+# Game of Thrones quiz
 
 A project that's a personality/political view quiz that is Game of Thrones themed. 
 
