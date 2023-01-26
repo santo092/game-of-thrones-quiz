@@ -151,3 +151,8 @@ body{
      width: 400px;
     text-align: center;
   }
+
+  .btn-outline-light {
+    color: black;
+    border-color: black;
+}
